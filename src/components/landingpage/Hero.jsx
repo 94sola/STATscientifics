@@ -1,147 +1,214 @@
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 
-// Import one static hero background image
-import heroBackground from "../../assets/images/hero..jpeg";
-
-// Import left content images
-import leftImage1 from "../../assets/images/data.jpg";
+import leftImage1 from "../../assets/images/hero.jpg";
 import leftImage2 from "../../assets/images/gc.jpg";
 import leftImage3 from "../../assets/images/gc-ms.jpg";
+import leftImage4 from "../../assets/images/data.jpg";
 
-const heroSlides = [
-  {
-    title: "Precision HPLC Research",
-    description:
-      "Delivering advanced chromatographic analysis, method development, and validation studies for pharmaceutical and biotech industries.",
-    leftImage: leftImage1,
-    leftButtonText: "Lipids for LNPs",
-    leftButtonLink: "/lipids-lnps",
-  },
-  {
-    title: "Analytical Excellence",
-    description:
-      "Providing reproducible, accurate, and validated scientific solutions for academic and industrial research worldwide.",
-    leftImage: leftImage2,
-    leftButtonText: "Explore Analytics",
-    leftButtonLink: "/analytics",
-  },
-  {
-    title: "Innovation in Chromatography",
-    description:
-      "Driving discovery with cutting-edge HPLC technology, collaborative research, and precision-driven methodologies.",
-    leftImage: leftImage3,
-    leftButtonText: "Chromatography Insights",
-    leftButtonLink: "/chromatography",
-  },
-];
-
-const Hero = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
-    }, 30000);
-
-    return () => clearInterval(interval);
-  }, []);
-
+export default function Hero() {
   return (
-    <section className="relative overflow-hidden">
-      {/* Background Image */}
-      <img
-        src={heroBackground}
-        alt="Hero Background"
-        className="absolute inset-0 w-full h-full object-cover"
-      />
+    <section className="bg-[#f3f3f3] py-8 lg:py-14">
+      <div className="mx-auto w-full max-w-screen-2xl px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
 
-      {/* Main Content */}
-      <div className="relative z-10 flex ">
-        {/* Large Gradient Overlay */}
-        <div
-          className="
-            absolute
-            inset-y-0
-            left-0
-            w-full
-            lg:w-[75%]
-            bg-linear-to-r
-            from-white
-            via-white/90
-            to-transparent
-          "
-        />
+          <div className="lg:col-span-8">
+            <div className="relative overflow-hidden rounded-2xl bg-[#AAD816] min-h-105 shadow-lg group">
 
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={currentSlide}
-            initial={{ opacity: 0, x: -80 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -80 }}
-            transition={{ duration: 0.8 }}
-            className="
-              relative
-              z-20
-              w-full
-              lg:w-[60%]
-              flex
-              items-center
-            "
-          >
-            <div className="px-8 py-16 max-w-440 mx-auto">
-              {/* Title */}
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-gray-900 leading-tight max-w-5xl">
-                {heroSlides[currentSlide].title}
-              </h1>
+              <div className="absolute top-0 left-0 w-52 h-20 bg-[#FCC5AE] rounded-br-[60px]" />
 
-              {/* Description */}
-              <p className="mt-6 text-lg md:text-xl text-gray-700 max-w-2xl">
-                {heroSlides[currentSlide].description}
-              </p>
 
-              {/* Image and Button */}
-              <div className="mt-10 flex items-end gap-8">
-                <div className="flex-1 h-64 md:h-80 lg:h-96">
-                  <img
-                    src={heroSlides[currentSlide].leftImage}
-                    alt="Slide Content"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <motion.a
-                  href={heroSlides[currentSlide].leftButtonLink}
-                  whileHover={{ scale: 1.03 }}
-                  whileTap={{ scale: 0.97 }}
-                  className="
-                    inline-flex
-                    items-center
-                    gap-3
-                    border
-                    border-gray-800
-                    bg-white
-                    px-6
-                    py-3
-                    text-lg
-                    font-medium
-                    text-gray-900
-                    hover:bg-gray-100
-                    transition
-                  "
-                >
-                  {heroSlides[currentSlide].leftButtonText}
-                  <ArrowUpRight size={20} />
-                </motion.a>
+
+              <div className="absolute top-0 right-0 w-[40%] h-[65%] overflow-hidden rounded-bl-[90px]">
+                <img
+                  src={leftImage1}
+                  alt=""
+                  className="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+                />
               </div>
 
-              
+
+              <div className="absolute bottom-0 right-0 w-60 h-36 bg-[#FCC5AE] rounded-tl-[80px]" />
+
+              {/* Content */}
+
+              <div className="absolute bottom-12 left-8 lg:left-10 max-w-lg">
+                <h2 className="text-3xl md:text-4xl font-bold text-white">
+                Volatiles & Lipid Profiling by GC-FID
+                </h2>
+
+                <p className="mt-4 text-lg text-gray-800">
+                Quantitative analysis of volatile organic compounds and comprehensive FAMES 
+                </p>
+
+                <button className="mt-8 inline-flex items-center gap-2 text-white font-bold text-xl hover:gap-4 transition-all">
+                  Discover More
+                  <ArrowUpRight size={22} />
+                </button>
+              </div>
             </div>
-          </motion.div>
-        </AnimatePresence>
+          </div>
+
+          <div className="lg:col-span-4">
+            <div className="relative overflow-hidden rounded-2xl bg-[#AAD816] min-h-105 shadow-lg group">
+              
+              <div className="absolute top-0 left-0 bg-[#FCC5AE] w-44 h-28 rounded-br-[80px]" />
+
+              <div className="absolute top-0 right-0 w-[42%] h-32 overflow-hidden">
+                <img
+                  src={leftImage2}
+                  alt=""
+                  className="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+                />
+              </div>
+
+              <div className="absolute bottom-10 px-8">
+                <h3 className="text-3xl font-bold text-white leading-tight">
+                  Pesticide residue testing by GC-MSD
+                </h3>
+
+                <p className="mt-5 text-lg">
+                  Achieve low ppb detection of various pesticide residues in food products
+                </p>
+
+                <button className="mt-8 inline-flex items-center gap-2 text-white font-bold text-xl hover:gap-4 transition-all">
+                  Discover more
+                  <ArrowUpRight size={22} />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* BOTTOM LEFT CARD */}
+
+          <div className="lg:col-span-6">
+            <div className="relative overflow-hidden rounded-2xl bg-[#03360a] min-h-65 shadow-lg group">
+              {/* Pink Shape */}
+
+              <div className="absolute top-0 right-0 w-56 h-28 bg-[#F2F07E] rounded-bl-[90px]" />
+
+              {/* Blue Shape */}
+
+              <div className="absolute bottom-0 right-10 w-36 h-16 bg-[#F2F07E] rounded-t-[40px]" />
+
+
+              <div className="absolute left-8 bottom-8 text-white max-w-md">
+                <h3 className="text-3xl font-bold text-white">
+                  Nutritional Profiling by HPLC
+                </h3>
+
+                <p className="mt-4 text-lg text-gray-50">
+                 Quantify fat/water soluble vitamins and amino acids in foods at high resolution.
+                </p>
+
+                <button className="mt-8 inline-flex items-center gap-2 text-white font-bold text-xl hover:gap-4 transition-all">
+                  Discover more
+                  <ArrowUpRight size={22} />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* BOTTOM RIGHT CARD */}
+
+          <div className="lg:col-span-6">
+            <div className="relative overflow-hidden rounded-2xl bg-[#03360a] min-h-65 shadow-lg group">
+              {/* Pink Decorations */}
+
+              <div className="absolute top-0 left-0 w-20 h-10 bg-[#F2F07E] rounded-br-[30px]" />
+
+              <div className="absolute top-0 right-0 w-44 h-full bg-[#F2F07E] rounded-bl-[80px]" />
+
+              
+              <div className="absolute left-8 top-12 max-w-md">
+                <h3 className="text-3xl font-bold text-white leading-tight">
+                  Trace Organic Pollutant Analysis by GC-MSD
+                </h3>
+
+                <p className="mt-4 text-lg text-gray-50">
+                  Definitive identification and ultra-trace quantification of environmental and industrial contaminants
+                </p>
+
+                <button className="mt-8 inline-flex items-center gap-2 text-white font-bold text-xl hover:gap-4 transition-all">
+                 discover now
+                  <ArrowUpRight size={22} />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div className="lg:col-span-8">
+            <div className="relative overflow-hidden rounded-2xl bg-[#AAD816] min-h-105 shadow-lg group">
+              {/* Yellow Shape */}
+
+              <div className="absolute top-0 left-0 w-52 h-20 bg-[#FCC5AE] rounded-br-[60px]" />
+
+              {/* Image */}
+
+              <div className="absolute top-0 right-0 w-[40%] h-[65%] overflow-hidden rounded-bl-[90px]">
+                <img
+                  src={leftImage3}
+                  alt=""
+                  className="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+                />
+              </div>
+
+              {/* Bottom Yellow Shape */}
+
+              <div className="absolute bottom-0 right-0 w-60 h-36 bg-[#FCC5AE] rounded-tl-[80px]" />
+
+              {/* Content */}
+
+              <div className="absolute bottom-12 left-8 lg:left-10 max-w-lg">
+                <h2 className="text-3xl md:text-4xl font-bold text-white">
+                 Non-Target Screening by GC-MS
+                </h2>
+
+                <p className="mt-4 text-lg">
+                 Comprehensive mass spectral matching using extensive reference databases (NIST23) in the analysis of plant extracts for phytochemical studies.
+                </p>
+
+                <button className="mt-8 inline-flex items-center gap-2 text-white font-bold text-xl hover:gap-4 transition-all">
+                  Discover More
+                  <ArrowUpRight size={22} />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div className="lg:col-span-4">
+            <div className="relative overflow-hidden rounded-2xl bg-[#AAD816] min-h-105 shadow-lg group">
+              {/* Purple Shape */}
+
+              <div className="absolute top-0 left-0 bg-[#FCC5AE] w-44 h-28 rounded-br-[80px]" />
+
+              {/* Small Image */}
+
+              <div className="absolute top-0 right-0 w-[42%] h-32 overflow-hidden">
+                <img
+                  src={leftImage4}
+                  alt=""
+                  className="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+                />
+              </div>
+
+              <div className="absolute bottom-10 px-8">
+                <h3 className="text-3xl font-bold text-white leading-tight">
+                Quantitative Phenolics & Flavonoids Analysis
+                </h3>
+
+                <p className="mt-5 text-lg">
+                  Subtext: High-resolution profiling of bioactive polyphenols and structural phytochemical markers using HPLC and derivatized GC-MS.
+                </p>
+
+                <button className="mt-8 inline-flex items-center gap-2 text-white font-bold text-xl hover:gap-4 transition-all">
+                  Discover More
+                  <ArrowUpRight size={22} />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
-};
-
-export default Hero;
+}
