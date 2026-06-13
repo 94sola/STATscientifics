@@ -36,19 +36,19 @@ export default function Navbar() {
       : null;
 
   return (
-    <nav className="sticky top-0 z-50 bg-white shadow-sm">
-      {/* HEADER */}
+    <nav className="sticky top-0 z-50 bg-white shadow-sm font-sans">
 
-      <div className="border-b">
+
+      <div className="">
         <div className="max-w-430 mx-auto px-4 lg:px-8">
-          <div className="h-20 flex items-center justify-between gap-4">
-            {/* LOGO */}
+          <div className="h-24 flex items-center justify-between gap-4">
+
 
             <Link to="/">
               <img
                 src={logo}
                 alt="Logo"
-                className="h-12 w-auto"
+                className="h-20 w-auto"
               />
             </Link>
 
@@ -56,11 +56,7 @@ export default function Navbar() {
 
             <div className="hidden md:flex flex-1 max-w-3xl">
               <div className="flex w-full border rounded overflow-hidden">
-                <button className="px-4 border-r bg-white flex items-center gap-2 text-sm">
-                  Products
-                  <ChevronDown size={16} />
-                </button>
-
+                
                 <input
                   value={searchQuery}
                   onChange={(e) =>
@@ -76,7 +72,7 @@ export default function Navbar() {
               </div>
             </div>
 
-            {/* RIGHT */}
+
 
             <div className="hidden lg:flex items-center gap-8">
               <span className="text-sm font-medium">
@@ -109,7 +105,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* PURPLE BAR */}
+    
 
       <div className="hidden lg:block bg-[#008cbb]">
         <div className="max-w-440 mx-auto px-8">
@@ -122,7 +118,7 @@ export default function Navbar() {
                   setActiveCategory(0);
                   setActiveChild(0);
                 }}
-                  className={`h-full px-6 font-semibold text-sm flex items-center gap-2 transition ${
+                  className={`h-full px-6 font-medium text-sm flex items-center gap-2 transition ${
                     activeMenu === item
                       ? "bg-white text-black"
                       : "text-white"
@@ -140,7 +136,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* MERCK STYLE PANEL */}
 
       {currentMenu && (
         <div
@@ -194,7 +189,6 @@ export default function Navbar() {
                 ))}
               </div>
 
-              {/* COLUMN 3 */}
 
               <div className="p-5">
                 <div className="space-y-4">
@@ -227,7 +221,6 @@ export default function Navbar() {
         </div>
       )}
 
-      {/* MOBILE MENU */}
 
       {isMobileOpen && (
         <div className="lg:hidden bg-white border-t">
@@ -266,7 +259,7 @@ function MobileMenuItem({ title, data }) {
     <div className="border-b">
       <button
         onClick={() => setOpen(!open)}
-        className="w-full py-4 flex justify-between items-center font-semibold"
+        className="w-full py-4 flex justify-between items-center font-medium"
       >
         {title}
         <ChevronDown
