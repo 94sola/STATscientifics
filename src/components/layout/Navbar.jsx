@@ -48,7 +48,7 @@ export default function Navbar() {
               <img
                 src={logo}
                 alt="Logo"
-                className="h-20 w-auto"
+                className="h-16 w-auto"
               />
             </Link>
 
