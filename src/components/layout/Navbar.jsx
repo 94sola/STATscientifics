@@ -66,7 +66,7 @@ export default function Navbar() {
                   className="flex-1 px-4 py-3 outline-none"
                 />
 
-                <button className="bg-[#008cbb] text-white px-5">
+                <button className="bg-[#03360a] text-white px-5">
                   <Search size={20} />
                 </button>
               </div>
@@ -107,7 +107,7 @@ export default function Navbar() {
 
     
 
-      <div className="hidden lg:block bg-[#008cbb]">
+      <div className="hidden lg:block bg-[#03360a]">
         <div className="max-w-440 mx-auto px-8">
           <div className="flex items-center h-12">
             {navItems.map((item) => (
