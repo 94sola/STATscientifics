@@ -4,6 +4,8 @@ import leftImage1 from "../../assets/images/hero.jpg";
 import leftImage2 from "../../assets/images/gc.jpg";
 import leftImage3 from "../../assets/images/gc-ms.jpg";
 import leftImage4 from "../../assets/images/data.jpg";
+import leftImage5 from "../../assets/images/gc-ms.jpg";
+import leftImage6 from "../../assets/images/data.jpg";
 
 export default function Hero() {
   return (
@@ -12,7 +14,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
 
           <div className="lg:col-span-8">
-            <div className="relative overflow-hidden rounded-2xl bg-[#05203f] min-h-107 shadow-lg group">
+            <div className="relative overflow-hidden rounded-2xl bg-[#033741] min-h-107 shadow-lg group">
 
 
 
@@ -44,7 +46,7 @@ export default function Hero() {
           </div>
 
           <div className="lg:col-span-4">
-            <div className="relative overflow-hidden rounded-2xl bg-[#05203f] min-h-107 shadow-lg group">
+            <div className="relative overflow-hidden rounded-2xl bg-[#033741] min-h-107 shadow-lg group">
 
               <div className="absolute top-0 right-0 w-[42%] h-33 overflow-hidden rounded-bl-[50px]">
                 <img
@@ -75,13 +77,14 @@ export default function Hero() {
 
           <div className="lg:col-span-6">
             <div className="relative overflow-hidden rounded-2xl bg-[#033741] min-h-65 shadow-lg group">
-              {/* Pink Shape */}
 
-              <div className="absolute top-0 right-0 w-56 h-28 bg-[#c8ec8d] rounded-bl-[90px]" />
-
-              {/* Blue Shape */}
-
-              <div className="absolute bottom-0 right-10 w-36 h-16 bg-[#c8ec8d] rounded-t-[40px]" />
+              <div className="absolute top-0 right-0 w-[42%] h-33 overflow-hidden rounded-bl-[50px]">
+                <img
+                  src={leftImage3}
+                  alt=""
+                  className="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+                />
+              </div>
 
 
               <div className="absolute left-8 bottom-8 text-white max-w-md">
@@ -104,13 +107,13 @@ export default function Hero() {
 
           <div className="lg:col-span-6">
             <div className="relative overflow-hidden rounded-2xl bg-[#033741] min-h-65 shadow-lg group">
-
-
-              <div className="absolute top-0 left-0 w-20 h-10 bg-[#c8ec8d] rounded-br-[30px]" />
-
-              <div className="absolute top-0 right-0 w-44 h-full bg-[#c8ec8d] rounded-bl-[80px]" />
-
-              
+                <div className="absolute top-0 right-0 w-[42%] h-33 overflow-hidden rounded-bl-[50px]">
+                  <img
+                    src={leftImage4}
+                    alt=""
+                    className="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+                  />
+                </div>
               <div className="absolute left-8 top-12 max-w-md">
                 <h3 className="text-4xl font-medium text-white leading-tight">
                   Trace Organic Pollutant Analysis by GC-MSD
@@ -129,11 +132,11 @@ export default function Hero() {
           </div>
 
           <div className="lg:col-span-8">
-            <div className="relative overflow-hidden rounded-2xl bg-[#05203f] min-h-107 shadow-lg group">
+            <div className="relative overflow-hidden rounded-2xl bg-[#033741] min-h-107 shadow-lg group">
 
               <div className="absolute top-0 right-0 w-[42%] h-[67%] overflow-hidden rounded-bl-[90px]">
                 <img
-                  src={leftImage3}
+                  src={leftImage5}
                   alt=""
                   className="w-full h-full object-cover transition duration-500 group-hover:scale-105"
                 />
@@ -158,12 +161,12 @@ export default function Hero() {
           </div>
 
           <div className="lg:col-span-4">
-            <div className="relative overflow-hidden rounded-2xl bg-[#05203f] min-h-105 shadow-lg group">
+            <div className="relative overflow-hidden rounded-2xl bg-[#033741] min-h-105 shadow-lg group">
 
 
               <div className="absolute top-0 right-0 w-[42%] h-33 overflow-hidden rounded-bl-[50px]">
                 <img
-                  src={leftImage4}
+                  src={leftImage6}
                   alt=""
                   className="w-full h-full object-cover transition duration-500 group-hover:scale-105"
                 />
