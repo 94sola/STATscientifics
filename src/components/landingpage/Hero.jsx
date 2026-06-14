@@ -7,14 +7,14 @@ import leftImage4 from "../../assets/images/data.jpg";
 
 export default function Hero() {
   return (
-    <section className="bg-[#f3f3f3] py-8 lg:py-14 text-white">
+    <section className="bg-[#f3f3f3] py-8 lg:py-14 text-white font-sans">
       <div className="mx-auto w-full max-w-screen-2xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
 
           <div className="lg:col-span-8">
-            <div className="relative overflow-hidden rounded-2xl bg-[#463c01] min-h-105 shadow-lg group">
+            <div className="relative overflow-hidden rounded-2xl bg-[#05203f] min-h-105 shadow-lg group">
 
-              <div className="absolute top-0 left-0 w-52 h-20 bg-[#FCC5AE] rounded-br-[60px]" />
+              <div className="absolute top-0 left-0 w-52 h-20 bg-[#fcaed9] rounded-br-[60px]" />
 
 
 
@@ -27,7 +27,7 @@ export default function Hero() {
               </div>
 
 
-              <div className="absolute bottom-0 right-0 w-60 h-36 bg-[#FCC5AE] rounded-tl-[80px]" />
+              <div className="absolute bottom-0 right-0 w-60 h-36 bg-[#fcaed9] rounded-tl-[80px]" />
 
               {/* Content */}
 
@@ -49,7 +49,7 @@ export default function Hero() {
           </div>
 
           <div className="lg:col-span-4">
-            <div className="relative overflow-hidden rounded-2xl bg-[#463c01] min-h-105 shadow-lg group">
+            <div className="relative overflow-hidden rounded-2xl bg-[#05203f] min-h-105 shadow-lg group">
               
               <div className="absolute top-0 left-0 bg-[#FCC5AE] w-44 h-28 rounded-br-[80px]" />
 
@@ -81,7 +81,7 @@ export default function Hero() {
           {/* BOTTOM LEFT CARD */}
 
           <div className="lg:col-span-6">
-            <div className="relative overflow-hidden rounded-2xl bg-[#03360a] min-h-65 shadow-lg group">
+            <div className="relative overflow-hidden rounded-2xl bg-[#033741] min-h-65 shadow-lg group">
               {/* Pink Shape */}
 
               <div className="absolute top-0 right-0 w-56 h-28 bg-[#F2F07E] rounded-bl-[90px]" />
@@ -92,11 +92,11 @@ export default function Hero() {
 
 
               <div className="absolute left-8 bottom-8 text-white max-w-md">
-                <h3 className="text-3xl font-bold text-white">
+                <h3 className="text-4xl font-medium text-white">
                   Nutritional Profiling by HPLC
                 </h3>
 
-                <p className="mt-4 text-lg text-gray-50">
+                <p className="mt-4 text-lg font-light text-gray-50">
                  Quantify fat/water soluble vitamins and amino acids in foods at high resolution.
                 </p>
 
