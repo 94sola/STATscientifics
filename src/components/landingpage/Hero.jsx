@@ -50,8 +50,6 @@ export default function Hero() {
 
           <div className="lg:col-span-4">
             <div className="relative overflow-hidden rounded-2xl bg-[#05203f] min-h-105 shadow-lg group">
-              
-              <div className="absolute top-0 left-0 bg-[#fcaed9] w-44 h-28 rounded-br-[80px]" />
 
               <div className="absolute top-0 right-0 w-[42%] h-32 overflow-hidden">
                 <img
@@ -138,9 +136,6 @@ export default function Hero() {
           <div className="lg:col-span-8">
             <div className="relative overflow-hidden rounded-2xl bg-[#05203f] min-h-105 shadow-lg group">
 
-              <div className="absolute top-0 left-0 w-52 h-20 bg-[#fcaed9] rounded-br-[60px]" />
-
-
               <div className="absolute top-0 right-0 w-[40%] h-[65%] overflow-hidden rounded-bl-[90px]">
                 <img
                   src={leftImage3}
@@ -148,9 +143,6 @@ export default function Hero() {
                   className="w-full h-full object-cover transition duration-500 group-hover:scale-105"
                 />
               </div>
-
-
-              <div className="absolute bottom-0 right-0 w-60 h-36 bg-[#fcaed9] rounded-tl-[80px]" />
 
 
               <div className="absolute bottom-12 left-8 lg:left-10 max-w-lg">
@@ -172,9 +164,6 @@ export default function Hero() {
 
           <div className="lg:col-span-4">
             <div className="relative overflow-hidden rounded-2xl bg-[#05203f] min-h-105 shadow-lg group">
-
-
-              <div className="absolute top-0 left-0 bg-[#fcaed9] w-44 h-28 rounded-br-[80px]" />
 
 
               <div className="absolute top-0 right-0 w-[42%] h-32 overflow-hidden">
