@@ -7,12 +7,12 @@ import leftImage4 from "../../assets/images/data.jpg";
 
 export default function Hero() {
   return (
-    <section className="bg-[#f3f3f3] py-8 lg:py-14">
+    <section className="bg-[#f3f3f3] py-8 lg:py-14 text-white">
       <div className="mx-auto w-full max-w-screen-2xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
 
           <div className="lg:col-span-8">
-            <div className="relative overflow-hidden rounded-2xl bg-[#AAD816] min-h-105 shadow-lg group">
+            <div className="relative overflow-hidden rounded-2xl bg-[#463c01] min-h-105 shadow-lg group">
 
               <div className="absolute top-0 left-0 w-52 h-20 bg-[#FCC5AE] rounded-br-[60px]" />
 
@@ -36,7 +36,7 @@ export default function Hero() {
                 Volatiles & Lipid Profiling by GC-FID
                 </h2>
 
-                <p className="mt-4 text-lg text-gray-800">
+                <p className="mt-4 text-lg text-gray-50">
                 Quantitative analysis of volatile organic compounds and comprehensive FAMES 
                 </p>
 
@@ -49,7 +49,7 @@ export default function Hero() {
           </div>
 
           <div className="lg:col-span-4">
-            <div className="relative overflow-hidden rounded-2xl bg-[#AAD816] min-h-105 shadow-lg group">
+            <div className="relative overflow-hidden rounded-2xl bg-[#463c01] min-h-105 shadow-lg group">
               
               <div className="absolute top-0 left-0 bg-[#FCC5AE] w-44 h-28 rounded-br-[80px]" />
 
@@ -108,11 +108,10 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* BOTTOM RIGHT CARD */}
 
           <div className="lg:col-span-6">
             <div className="relative overflow-hidden rounded-2xl bg-[#03360a] min-h-65 shadow-lg group">
-              {/* Pink Decorations */}
+
 
               <div className="absolute top-0 left-0 w-20 h-10 bg-[#F2F07E] rounded-br-[30px]" />
 
@@ -137,12 +136,10 @@ export default function Hero() {
           </div>
 
           <div className="lg:col-span-8">
-            <div className="relative overflow-hidden rounded-2xl bg-[#AAD816] min-h-105 shadow-lg group">
-              {/* Yellow Shape */}
+            <div className="relative overflow-hidden rounded-2xl bg-[#463c01] min-h-105 shadow-lg group">
 
               <div className="absolute top-0 left-0 w-52 h-20 bg-[#FCC5AE] rounded-br-[60px]" />
 
-              {/* Image */}
 
               <div className="absolute top-0 right-0 w-[40%] h-[65%] overflow-hidden rounded-bl-[90px]">
                 <img
@@ -152,11 +149,9 @@ export default function Hero() {
                 />
               </div>
 
-              {/* Bottom Yellow Shape */}
 
               <div className="absolute bottom-0 right-0 w-60 h-36 bg-[#FCC5AE] rounded-tl-[80px]" />
 
-              {/* Content */}
 
               <div className="absolute bottom-12 left-8 lg:left-10 max-w-lg">
                 <h2 className="text-3xl md:text-4xl font-bold text-white">
@@ -176,12 +171,11 @@ export default function Hero() {
           </div>
 
           <div className="lg:col-span-4">
-            <div className="relative overflow-hidden rounded-2xl bg-[#AAD816] min-h-105 shadow-lg group">
-              {/* Purple Shape */}
+            <div className="relative overflow-hidden rounded-2xl bg-[#463c01] min-h-105 shadow-lg group">
+
 
               <div className="absolute top-0 left-0 bg-[#FCC5AE] w-44 h-28 rounded-br-[80px]" />
 
-              {/* Small Image */}
 
               <div className="absolute top-0 right-0 w-[42%] h-32 overflow-hidden">
                 <img
