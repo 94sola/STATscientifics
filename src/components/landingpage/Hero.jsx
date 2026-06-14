@@ -12,22 +12,17 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
 
           <div className="lg:col-span-8">
-            <div className="relative overflow-hidden rounded-2xl bg-[#05203f] min-h-105 shadow-lg group">
-
-              <div className="absolute top-0 left-0 w-52 h-20 bg-[#fcaed9] rounded-br-[60px]" />
+            <div className="relative overflow-hidden rounded-2xl bg-[#05203f] min-h-107 shadow-lg group">
 
 
 
-              <div className="absolute top-0 right-0 w-[40%] h-[65%] overflow-hidden rounded-bl-[90px]">
+              <div className="absolute top-0 right-0 w-[43%] h-[66%] overflow-hidden rounded-bl-[90px]">
                 <img
                   src={leftImage1}
                   alt=""
                   className="w-full h-full object-cover transition duration-500 group-hover:scale-105"
                 />
               </div>
-
-
-              <div className="absolute bottom-0 right-0 w-60 h-36 bg-[#fcaed9] rounded-tl-[80px]" />
 
               {/* Content */}
 
@@ -49,9 +44,9 @@ export default function Hero() {
           </div>
 
           <div className="lg:col-span-4">
-            <div className="relative overflow-hidden rounded-2xl bg-[#05203f] min-h-105 shadow-lg group">
+            <div className="relative overflow-hidden rounded-2xl bg-[#05203f] min-h-107 shadow-lg group">
 
-              <div className="absolute top-0 right-0 w-[42%] h-32 overflow-hidden">
+              <div className="absolute top-0 right-0 w-[42%] h-33 overflow-hidden rounded-bl-[50px]">
                 <img
                   src={leftImage2}
                   alt=""
@@ -134,9 +129,9 @@ export default function Hero() {
           </div>
 
           <div className="lg:col-span-8">
-            <div className="relative overflow-hidden rounded-2xl bg-[#05203f] min-h-105 shadow-lg group">
+            <div className="relative overflow-hidden rounded-2xl bg-[#05203f] min-h-107 shadow-lg group">
 
-              <div className="absolute top-0 right-0 w-[40%] h-[65%] overflow-hidden rounded-bl-[90px]">
+              <div className="absolute top-0 right-0 w-[42%] h-[67%] overflow-hidden rounded-bl-[90px]">
                 <img
                   src={leftImage3}
                   alt=""
@@ -166,7 +161,7 @@ export default function Hero() {
             <div className="relative overflow-hidden rounded-2xl bg-[#05203f] min-h-105 shadow-lg group">
 
 
-              <div className="absolute top-0 right-0 w-[42%] h-32 overflow-hidden">
+              <div className="absolute top-0 right-0 w-[42%] h-33 overflow-hidden rounded-bl-[50px]">
                 <img
                   src={leftImage4}
                   alt=""
