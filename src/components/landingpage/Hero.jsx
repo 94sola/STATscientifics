@@ -32,11 +32,11 @@ export default function Hero() {
               {/* Content */}
 
               <div className="absolute bottom-12 left-8 lg:left-10 max-w-lg">
-                <h2 className="text-3xl md:text-4xl font-bold text-white">
+                <h2 className="text-4xl font-medium text-white">
                 Volatiles & Lipid Profiling by GC-FID
                 </h2>
 
-                <p className="mt-4 text-lg text-gray-50">
+                <p className="mt-4 text-lg font-light text-gray-50">
                 Quantitative analysis of volatile organic compounds and comprehensive FAMES 
                 </p>
 
@@ -51,7 +51,7 @@ export default function Hero() {
           <div className="lg:col-span-4">
             <div className="relative overflow-hidden rounded-2xl bg-[#05203f] min-h-105 shadow-lg group">
               
-              <div className="absolute top-0 left-0 bg-[#FCC5AE] w-44 h-28 rounded-br-[80px]" />
+              <div className="absolute top-0 left-0 bg-[#fcaed9] w-44 h-28 rounded-br-[80px]" />
 
               <div className="absolute top-0 right-0 w-[42%] h-32 overflow-hidden">
                 <img
@@ -62,11 +62,11 @@ export default function Hero() {
               </div>
 
               <div className="absolute bottom-10 px-8">
-                <h3 className="text-3xl font-bold text-white leading-tight">
+                <h3 className="text-4xl font-medium text-white leading-tight">
                   Pesticide residue testing by GC-MSD
                 </h3>
 
-                <p className="mt-5 text-lg">
+                <p className="mt-5 text-lg font-light text-gray-50">
                   Achieve low ppb detection of various pesticide residues in food products
                 </p>
 
@@ -84,11 +84,11 @@ export default function Hero() {
             <div className="relative overflow-hidden rounded-2xl bg-[#033741] min-h-65 shadow-lg group">
               {/* Pink Shape */}
 
-              <div className="absolute top-0 right-0 w-56 h-28 bg-[#F2F07E] rounded-bl-[90px]" />
+              <div className="absolute top-0 right-0 w-56 h-28 bg-[#c8ec8d] rounded-bl-[90px]" />
 
               {/* Blue Shape */}
 
-              <div className="absolute bottom-0 right-10 w-36 h-16 bg-[#F2F07E] rounded-t-[40px]" />
+              <div className="absolute bottom-0 right-10 w-36 h-16 bg-[#c8ec8d] rounded-t-[40px]" />
 
 
               <div className="absolute left-8 bottom-8 text-white max-w-md">
@@ -110,20 +110,20 @@ export default function Hero() {
 
 
           <div className="lg:col-span-6">
-            <div className="relative overflow-hidden rounded-2xl bg-[#03360a] min-h-65 shadow-lg group">
+            <div className="relative overflow-hidden rounded-2xl bg-[#033741] min-h-65 shadow-lg group">
 
 
-              <div className="absolute top-0 left-0 w-20 h-10 bg-[#F2F07E] rounded-br-[30px]" />
+              <div className="absolute top-0 left-0 w-20 h-10 bg-[#c8ec8d] rounded-br-[30px]" />
 
-              <div className="absolute top-0 right-0 w-44 h-full bg-[#F2F07E] rounded-bl-[80px]" />
+              <div className="absolute top-0 right-0 w-44 h-full bg-[#c8ec8d] rounded-bl-[80px]" />
 
               
               <div className="absolute left-8 top-12 max-w-md">
-                <h3 className="text-3xl font-bold text-white leading-tight">
+                <h3 className="text-4xl font-medium text-white leading-tight">
                   Trace Organic Pollutant Analysis by GC-MSD
                 </h3>
 
-                <p className="mt-4 text-lg text-gray-50">
+                <p className="mt-4 text-lg font-light text-gray-50">
                   Definitive identification and ultra-trace quantification of environmental and industrial contaminants
                 </p>
 
@@ -136,9 +136,9 @@ export default function Hero() {
           </div>
 
           <div className="lg:col-span-8">
-            <div className="relative overflow-hidden rounded-2xl bg-[#463c01] min-h-105 shadow-lg group">
+            <div className="relative overflow-hidden rounded-2xl bg-[#05203f] min-h-105 shadow-lg group">
 
-              <div className="absolute top-0 left-0 w-52 h-20 bg-[#FCC5AE] rounded-br-[60px]" />
+              <div className="absolute top-0 left-0 w-52 h-20 bg-[#fcaed9] rounded-br-[60px]" />
 
 
               <div className="absolute top-0 right-0 w-[40%] h-[65%] overflow-hidden rounded-bl-[90px]">
@@ -150,15 +150,15 @@ export default function Hero() {
               </div>
 
 
-              <div className="absolute bottom-0 right-0 w-60 h-36 bg-[#FCC5AE] rounded-tl-[80px]" />
+              <div className="absolute bottom-0 right-0 w-60 h-36 bg-[#fcaed9] rounded-tl-[80px]" />
 
 
               <div className="absolute bottom-12 left-8 lg:left-10 max-w-lg">
-                <h2 className="text-3xl md:text-4xl font-bold text-white">
+                <h2 className="text-4xl  font-medium text-white">
                  Non-Target Screening by GC-MS
                 </h2>
 
-                <p className="mt-4 text-lg">
+                <p className="mt-4 text-lg font-light text-gray-50">
                  Comprehensive mass spectral matching using extensive reference databases (NIST23) in the analysis of plant extracts for phytochemical studies.
                 </p>
 
@@ -171,10 +171,10 @@ export default function Hero() {
           </div>
 
           <div className="lg:col-span-4">
-            <div className="relative overflow-hidden rounded-2xl bg-[#463c01] min-h-105 shadow-lg group">
+            <div className="relative overflow-hidden rounded-2xl bg-[#05203f] min-h-105 shadow-lg group">
 
 
-              <div className="absolute top-0 left-0 bg-[#FCC5AE] w-44 h-28 rounded-br-[80px]" />
+              <div className="absolute top-0 left-0 bg-[#fcaed9] w-44 h-28 rounded-br-[80px]" />
 
 
               <div className="absolute top-0 right-0 w-[42%] h-32 overflow-hidden">
@@ -186,11 +186,11 @@ export default function Hero() {
               </div>
 
               <div className="absolute bottom-10 px-8">
-                <h3 className="text-3xl font-bold text-white leading-tight">
+                <h3 className="text-4xl font-medium text-white leading-tight">
                 Quantitative Phenolics & Flavonoids Analysis
                 </h3>
 
-                <p className="mt-5 text-lg">
+                <p className="mt-5 text-lg font-light text-gray-50">
                   Subtext: High-resolution profiling of bioactive polyphenols and structural phytochemical markers using HPLC and derivatized GC-MS.
                 </p>
 
