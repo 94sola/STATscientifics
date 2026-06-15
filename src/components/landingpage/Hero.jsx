@@ -44,7 +44,7 @@ export default function Hero() {
           </div>
 
           <div className="lg:col-span-4">
-            <div className="relative overflow-hidden rounded-2xl bg-[#c8ec8d] min-h-107 shadow-lg group">
+            <div className="relative overflow-hidden rounded-2xl bg-linear-to-r from-[#0b6879] via-[#014a58] to-[#033741] min-h-107 shadow-lg group">
 
               <div className="absolute top-0 right-0 w-[42%] h-30 overflow-hidden rounded-bl-[50px]">
                 <img
@@ -55,15 +55,15 @@ export default function Hero() {
               </div>
 
               <div className="absolute bottom-10 px-8">
-                <h3 className="text-3xl font-medium text-gray-950 leading-tight">
+                <h3 className="text-3xl font-medium text-gray-50 leading-tight">
                   Pesticide residue testing by GC-MSD
                 </h3>
 
-                <p className="mt-5 text-lg font-light text-[#031a1f]">
+                <p className="mt-5 text-lg font-light text-gray-50">
                   Achieve low ppb detection of various pesticide residues in food products
                 </p>
 
-                <button className="mt-8 inline-flex items-center gap-2 text-[#031a1f] font-bold text-xl hover:gap-4 transition-all">
+                <button className="mt-8 inline-flex items-center gap-2 text-gray-50 font-bold text-xl hover:gap-4 transition-all">
                   Discover more
                   <ArrowUpRight size={22} />
                 </button>
@@ -74,26 +74,20 @@ export default function Hero() {
           {/* BOTTOM LEFT CARD */}
 
           <div className="lg:col-span-6">
-            <div className="relative overflow-hidden rounded-2xl bg-[#033741] min-h-68 shadow-lg group">
-              {/* Pink Shape */}
-
-              <div className="absolute top-0 right-0 w-50 h-25 bg-[#c8ec8d] rounded-bl-[90px]" />
-
-              {/* Blue Shape */}
-
-              <div className="absolute bottom-0 right-10 w-33 h-13 bg-[#c8ec8d] rounded-t-[40px]" />
+            <div className="relative overflow-hidden rounded-2xl bg-[#c8ec8d] min-h-68 shadow-lg group">
+           
 
 
-              <div className="absolute left-8 bottom-8 text-white max-w-md">
-                <h3 className="text-3xl font-medium text-white">
+              <div className="absolute left-8 bottom-8  max-w-md">
+                <h3 className="text-3xl font-medium text-gray-950 leading-tight">
                   Nutritional Profiling by HPLC
                 </h3>
 
-                <p className="mt-4 text-lg font-light text-gray-50">
+                <p className="mt-4 text-lg font-light text-gray-950">
                  Quantify fat/water soluble vitamins and amino acids in foods at high resolution.
                 </p>
 
-                <button className="mt-4 inline-flex items-center gap-2 text-white font-bold text-xl hover:gap-4 transition-all">
+                <button className="mt-4 inline-flex items-center gap-2 text-gray-950 font-bold text-xl hover:gap-4 transition-all">
                   Discover more
                   <ArrowUpRight size={22} />
                 </button>
@@ -103,22 +97,18 @@ export default function Hero() {
 
 
           <div className="lg:col-span-6">
-            <div className="relative overflow-hidden rounded-2xl bg-[#033741] min-h-68 shadow-lg group">
+            <div className="relative overflow-hidden rounded-2xl bg-[#c8ec8d] min-h-68 shadow-lg group">
 
-
-              <div className="absolute top-0 left-0 w-14 h-10 bg-[#c8ec8d] rounded-br-[30px]" />
-
-              
               <div className="absolute left-8 top-12 max-w-md">
-                <h3 className="text-3xl font-medium text-white leading-tight">
+                <h3 className="text-3xl font-medium text-gray-950 leading-tight">
                   Trace Organic Pollutant Analysis by GC-MSD
                 </h3>
 
-                <p className="mt-4 text-lg font-light text-gray-50">
+                <p className="mt-4 text-lg font-light text-gray-950">
                   Definitive identification and ultra-trace quantification of environmental and industrial contaminants
                 </p>
 
-                <button className="mt-4 inline-flex items-center gap-2 text-white font-bold text-xl hover:gap-4 transition-all">
+                <button className="mt-4 inline-flex items-center gap-2 text-gray-950 font-bold text-xl hover:gap-4 transition-all">
                  discover now
                   <ArrowUpRight size={22} />
                 </button>
@@ -127,7 +117,7 @@ export default function Hero() {
           </div>
 
           <div className="lg:col-span-8">
-            <div className="relative overflow-hidden rounded-2xl bg-[#033741] min-h-107 shadow-lg group">
+            <div className="relative overflow-hidden rounded-2xl bg-linear-to-r from-[#0b6879] via-[#014a58] to-[#033741] min-h-107 shadow-lg group">
 
               <div className="absolute top-0 right-0 w-[40%] h-[60%] overflow-hidden rounded-bl-[90px]">
                 <img
@@ -139,7 +129,7 @@ export default function Hero() {
 
 
               <div className="absolute bottom-12 left-8 lg:left-10 max-w-lg">
-                <h2 className="text-3xl  font-medium text-white">
+                <h2 className="text-3xl  font-medium text-green-50">
                  Non-Target Screening by GC-MS
                 </h2>
 
@@ -156,7 +146,7 @@ export default function Hero() {
           </div>
 
           <div className="lg:col-span-4">
-            <div className="relative overflow-hidden rounded-2xl bg-[#c8ec8d] min-h-105 shadow-lg group">
+            <div className="relative overflow-hidden rounded-2xl bg-linear-to-r from-[#0b6879] via-[#014a58] to-[#033741] min-h-105 shadow-lg group">
 
 
               <div className="absolute top-0 right-0 w-[42%] h-[30%] overflow-hidden rounded-bl-[50px]">
@@ -168,15 +158,15 @@ export default function Hero() {
               </div>
 
               <div className="absolute bottom-10 px-8">
-                <h3 className="text-3xl font-medium text-gray-950 leading-tight">
+                <h3 className="text-3xl font-medium text-gray-50 leading-tight">
                 Quantitative Phenolics & Flavonoids Analysis
                 </h3>
 
-                <p className="mt-5 text-lg font-light text-gray-950">
+                <p className="mt-5 text-lg font-light text-gray-50">
                 High-resolution profiling of bioactive polyphenols and structural phytochemical markers using HPLC and derivatized GC-MS.
                 </p>
 
-                <button className="mt-8 inline-flex items-center gap-2 text-[#031a1f] font-bold text-xl hover:gap-4 transition-all">
+                <button className="mt-8 inline-flex items-center gap-2 text-gray-50 font-bold text-xl hover:gap-4 transition-all">
                   Discover More
                   <ArrowUpRight size={22} />
                 </button>

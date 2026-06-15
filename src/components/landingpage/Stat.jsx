@@ -1,7 +1,7 @@
 import { motion, AnimatePresence  } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroBackground from "../../assets/images/heros.jpg";
+import heroBackground from "../../assets/images/hero..jpeg";
 import { useState, useEffect } from "react";
 
 
@@ -77,7 +77,7 @@ export default function HeroSection() {
               items-center
             "
           >
-            <div className="px-8 md:px-16 lg:px-24 py-20 w-full">
+            <div className="px-8 md:px-16 lg:px-24 py-24 w-full">
               {/* Title */}
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-medium text-gray-900 leading-tight max-w-5xl">
                 {heroSlides[currentSlide].title}
