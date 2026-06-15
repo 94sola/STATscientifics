@@ -12,7 +12,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
 
           <div className="lg:col-span-8">
-            <div className="relative overflow-hidden rounded-2xl bg-[#033741] min-h-107 shadow-lg group">
+            <div className="relative overflow-hidden rounded-2xl bg-linear-to-r from-[#0b6879] via-[#014a58] to-[#033741] min-h-107 shadow-lg group">
 
 
 
@@ -44,7 +44,7 @@ export default function Hero() {
           </div>
 
           <div className="lg:col-span-4">
-            <div className="relative overflow-hidden rounded-2xl bg-[#033741] min-h-107 shadow-lg group">
+            <div className="relative overflow-hidden rounded-2xl bg-[#c8ec8d] min-h-107 shadow-lg group">
 
               <div className="absolute top-0 right-0 w-[42%] h-30 overflow-hidden rounded-bl-[50px]">
                 <img
@@ -55,15 +55,15 @@ export default function Hero() {
               </div>
 
               <div className="absolute bottom-10 px-8">
-                <h3 className="text-3xl font-medium text-white leading-tight">
+                <h3 className="text-3xl font-medium text-gray-950 leading-tight">
                   Pesticide residue testing by GC-MSD
                 </h3>
 
-                <p className="mt-5 text-lg font-light text-gray-50">
+                <p className="mt-5 text-lg font-light text-[#031a1f]">
                   Achieve low ppb detection of various pesticide residues in food products
                 </p>
 
-                <button className="mt-8 inline-flex items-center gap-2 text-white font-bold text-xl hover:gap-4 transition-all">
+                <button className="mt-8 inline-flex items-center gap-2 text-[#031a1f] font-bold text-xl hover:gap-4 transition-all">
                   Discover more
                   <ArrowUpRight size={22} />
                 </button>
@@ -107,8 +107,6 @@ export default function Hero() {
 
 
               <div className="absolute top-0 left-0 w-14 h-10 bg-[#c8ec8d] rounded-br-[30px]" />
-
-              <div className="absolute top-0 right-0 w-40 h-full bg-[#c8ec8d] rounded-bl-[80px]" />
 
               
               <div className="absolute left-8 top-12 max-w-md">
@@ -158,7 +156,7 @@ export default function Hero() {
           </div>
 
           <div className="lg:col-span-4">
-            <div className="relative overflow-hidden rounded-2xl bg-[#033741] min-h-105 shadow-lg group">
+            <div className="relative overflow-hidden rounded-2xl bg-[#c8ec8d] min-h-105 shadow-lg group">
 
 
               <div className="absolute top-0 right-0 w-[42%] h-[30%] overflow-hidden rounded-bl-[50px]">
@@ -170,15 +168,15 @@ export default function Hero() {
               </div>
 
               <div className="absolute bottom-10 px-8">
-                <h3 className="text-3xl font-medium text-white leading-tight">
+                <h3 className="text-3xl font-medium text-gray-950 leading-tight">
                 Quantitative Phenolics & Flavonoids Analysis
                 </h3>
 
-                <p className="mt-5 text-lg font-light text-gray-50">
-                  Subtext: High-resolution profiling of bioactive polyphenols and structural phytochemical markers using HPLC and derivatized GC-MS.
+                <p className="mt-5 text-lg font-light text-gray-950">
+                High-resolution profiling of bioactive polyphenols and structural phytochemical markers using HPLC and derivatized GC-MS.
                 </p>
 
-                <button className="mt-8 inline-flex items-center gap-2 text-white font-bold text-xl hover:gap-4 transition-all">
+                <button className="mt-8 inline-flex items-center gap-2 text-[#031a1f] font-bold text-xl hover:gap-4 transition-all">
                   Discover More
                   <ArrowUpRight size={22} />
                 </button>
