@@ -6,8 +6,8 @@ import Hero3 from "./stat2";
 export default function Home() {
   return (
     <div>
-      <Hero />
       <Hero1 />
+      <Hero />
       <Hero2 />
       <Hero3 />
     </div>

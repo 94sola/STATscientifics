@@ -1,7 +1,7 @@
 import { motion, AnimatePresence  } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroBackground from "../../assets/images/hero..jpeg";
+import heroBackground from "../../assets/images/heros.jpg";
 import { useState, useEffect } from "react";
 
 
@@ -36,28 +36,8 @@ export default function HeroSection() {
     return () => clearInterval(interval);
   }, [  heroSlides.length]);
   return (
-    <section className="max-w-440 mx-auto relative overflow-hidden bg-gray-50">
-     <div>
-       <div className=" grid grid-cols-2 md:grid-cols-4 gap-6 my-6 text-[#008cbb]">
-          {[
-            { label: "Biomedical Research Products", to: "/biomedical-research-products" },
-            { label: "CRO & CDMO Services", to: "/cro-cdmo-services" },
-            { label: "CGMP Manufacturing & API Products", to: "/cgmp-manufacturing-api-products" },
-            { label: "Forensic & Toxicology Reference Standards", to: "/forensic-toxicology-reference-standards" },
-          ].map((item, idx) => (
-            <Link
-              key={idx}
-              to={item.to}
-              className="bg-white text-3xl border border-[#008cbb] shadow-sm p-6 text-gray-900 hover:shadow-md transition flex items-center justify-between gap-4"
-            >
-              <span>{item.label}</span>
-              <ChevronRight
-                className="w-8 h-8 transition-transform text-[#008cbb]"
-              />
-            </Link>
-          ))}
-        </div>
-     </div>
+    <section className="max-w-440 mx-auto relative overflow-hidden bg-gray-50 py-6 lg:py-10">
+     
       <div className="relative">
          <img
         src={heroBackground}
@@ -67,7 +47,6 @@ export default function HeroSection() {
 
       {/* Main Content */}
       <div className="relative z-10 flex">
-        {/* Large Gradient Overlay */}
         <div
           className="
             absolute
@@ -77,7 +56,7 @@ export default function HeroSection() {
             lg:w-[75%]
             bg-linear-to-r
             from-white
-            via-white/90
+            via-white/70
             to-transparent
           "
         />
@@ -98,9 +77,9 @@ export default function HeroSection() {
               items-center
             "
           >
-            <div className="px-8 md:px-16 lg:px-24 py-16 w-full">
+            <div className="px-8 md:px-16 lg:px-24 py-20 w-full">
               {/* Title */}
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight max-w-5xl">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-medium text-gray-900 leading-tight max-w-5xl">
                 {heroSlides[currentSlide].title}
               </h1>
 
@@ -116,12 +95,13 @@ export default function HeroSection() {
                     gap-3
                     border
                     border-gray-800
-                    bg-white
+                    bg-[#033741]
                     px-6
                     py-3
                     text-lg
                     font-medium
-                    text-gray-900
+                    text-gray-50
+                    hover:text-gray-900
                     hover:bg-gray-100
                     transition
                   "
@@ -135,6 +115,27 @@ export default function HeroSection() {
         </AnimatePresence>
       </div>
       </div>
+      <div>
+       <div className=" grid grid-cols-2 md:grid-cols-4 gap-6 my-6 text-[#008cbb]">
+          {[
+            { label: "Biomedical Research Products", to: "/biomedical-research-products" },
+            { label: "CRO & CDMO Services", to: "/cro-cdmo-services" },
+            { label: "CGMP Manufacturing & API Products", to: "/cgmp-manufacturing-api-products" },
+            { label: "Forensic & Toxicology Reference Standards", to: "/forensic-toxicology-reference-standards" },
+          ].map((item, idx) => (
+            <Link
+              key={idx}
+              to={item.to}
+              className="bg-white text-3xl border border-[#008cbb] shadow-sm p-6 text-gray-900 hover:shadow-md transition flex items-center justify-between gap-4"
+            >
+              <span>{item.label}</span>
+              <ChevronRight
+                className="w-8 h-8 transition-transform text-[#008cbb]"
+              />
+            </Link>
+          ))}
+        </div>
+     </div>
     </section>
   );
 }
