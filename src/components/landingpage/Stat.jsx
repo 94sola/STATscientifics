@@ -14,15 +14,20 @@ export default function HeroSection() {
     leftButtonLink: "/lipids-lnps",
   },
   {
-    title: "Analytical Excellence",
+    title: "Your Food Testing HQ",
     leftButtonText: "Explore Now",
     leftButtonLink: "/analytics",
   },
   {
-    title: "Innovation in Chromatography",
+    title: "Food Testing. Research. Innovation. ",
     leftButtonText: "Explore Now",
     leftButtonLink: "/chromatography",
   },
+  {
+    title: "Unlock Phytochemical research. ",
+    leftButtonText: "Explore Now",
+    leftButtonLink: "/chromatography",
+  }
 ];
 
 
@@ -36,7 +41,7 @@ export default function HeroSection() {
     return () => clearInterval(interval);
   }, [  heroSlides.length]);
   return (
-    <section className="max-w-440 mx-auto relative overflow-hidden bg-gray-50 py-6 lg:py-10">
+    <section className="max-w-full relative overflow-hidden bg-gray-50 ">
      
       <div className="relative">
          <img
@@ -55,8 +60,8 @@ export default function HeroSection() {
             w-full
             lg:w-[75%]
             bg-linear-to-r
-            from-white
-            via-white/70
+            from-white/95
+            via-neutral-50/65
             to-transparent
           "
         />
@@ -93,16 +98,15 @@ export default function HeroSection() {
                     inline-flex
                     items-center
                     gap-3
-                    border
-                    border-gray-800
-                    bg-[#033741]
+                    bg-[#BF5495]
                     px-6
                     py-3
                     text-lg
                     font-medium
                     text-gray-50
                     hover:text-gray-900
-                    hover:bg-gray-100
+                    hover:bg-transparent
+                    border border-[#BF5495]
                     transition
                   "
                 >
@@ -126,11 +130,11 @@ export default function HeroSection() {
             <Link
               key={idx}
               to={item.to}
-              className="bg-white text-3xl border border-[#008cbb] shadow-sm p-6 text-gray-900 hover:shadow-md transition flex items-center justify-between gap-4"
+              className="bg-white text-3xl border border-[#BF5495] shadow-sm p-6 text-gray-900 hover:shadow-md transition flex items-center justify-between gap-4"
             >
               <span>{item.label}</span>
               <ChevronRight
-                className="w-8 h-8 transition-transform text-[#008cbb]"
+                className="w-8 h-8 transition-transform text-[#BF5495]"
               />
             </Link>
           ))}

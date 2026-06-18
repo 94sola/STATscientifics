@@ -74,7 +74,7 @@ function ResourceCard({ resource, index }) {
   );
 }
 
-export default function FeaturedResources() {
+export default function Resources() {
   return (
     <section className="bg-gray-100 font-sans py-12">
       <div className="max-w-440 mx-auto px-6">

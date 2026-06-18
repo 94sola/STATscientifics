@@ -62,11 +62,11 @@ export default function Navbar() {
                   onChange={(e) =>
                     setSearchQuery(e.target.value)
                   }
-                  placeholder="Type in Product Names, Product Numbers, or CAS Numbers..."
+                  placeholder="Type in Product Names, Product Numbers ..."
                   className="flex-1 px-4 py-3 outline-none"
                 />
 
-                <button className="bg-[#033741] text-white px-5">
+                <button className="bg-[#BF5495] text-white px-5">
                   <Search size={20} />
                 </button>
               </div>
@@ -107,7 +107,7 @@ export default function Navbar() {
 
     
 
-      <div className="hidden lg:block bg-[#033741]">
+      <div className="hidden lg:block bg-[#BF5495]">
         <div className="max-w-440 mx-auto px-8">
           <div className="flex items-center h-12">
             {navItems.map((item) => (

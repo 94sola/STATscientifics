@@ -2,42 +2,46 @@
 import { motion } from "framer-motion";
 
 // Import images directly
-import reporterAssayImg from "../../assets/images/data.jpg";
-import raptinImg from "../../assets/images/gc-ms.jpg";
-import tc4Img from "../../assets/images/gc.jpg";
+import Img1 from "../../assets/images/data.jpg";
+import Img2 from "../../assets/images/gc-ms.jpg";
+import Img3 from "../../assets/images/gc.jpg";
+import Img4 from "../../assets/images/gc.jpg";
 
 const products = [
   {
-    title: "Reporter Assay Panel for Calcitonin and Amylin Receptors",
+    title: "Fatty Acid Profiling",
     description:
-      "Investigate CTR, AMY₁R, AMY₂R, and AMY₃R pathways with our flexible, cell-based reporter assay panel.",
-    imageAlt: "Graph showing CTR, AMY₁R, AMY₂R, AMY₃R curves",
-    imageSrc: reporterAssayImg,
+      "Comprehensive characterization of fatty acids in various foods or oils.",
+    imageSrc: Img1,
   },
   {
-    title: "Raptin (human, recombinant)",
+    title: "Amino Acid Profiling",
     description:
-      "High-purity recombinant human protein for sleep-linked appetite and metabolic pathway research.",
-    imageAlt: "SDS-PAGE gel image",
-    imageSrc: raptinImg,
+      "Detect and quantify amino acids in food products.",
+    imageSrc: Img2,
   },
   {
-    title: "TC4",
+    title: "Vitamins Analysis",
     description:
-      "Synthetic peptide and tetra-agonist of GLP-1R, GCGR, GIPR, and Y₂ receptor.",
-    imageAlt: "Molecular structure diagram",
-    imageSrc: tc4Img,
+      "Full quantification of fat and water soluble vitamins in foods.",
+    imageSrc: Img3,
+  },
+   {
+    title: "Quantitative Phenolics & Flavonoids Analysis",
+    description:
+      "Identify, quantify and profile phenolics, flavonoids and secondary metabolites.",
+    imageSrc: Img4,
   },
 ];
 
 export default function FeaturedProducts() {
   return (
-    <section className=" py-12 text-xl font-sans max-w-440 mx-auto">
+    <section className=" py-12 text-xl font-sans max-w-460 mx-auto">
       <div className=" px-6 text-center">
         <h2 className="text-5xl font-medium text-gray-800 mb-8">
-          Featured Products
+          Featured Services
         </h2>
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-4">
           {products.map((product, idx) => (
             <motion.div
               key={idx}
@@ -47,9 +51,9 @@ export default function FeaturedProducts() {
               whileHover={{
                 scale: 1.05,
                 y: -5,
-                boxShadow: "0px 10px 20px rgba(0,0,0,0.15)",
+                boxShadow: "0px 10px 20px rgba(0,0,0,0.15) ",
               }}
-              className="bg-white rounded-lg p-6 flex flex-col items-center"
+              className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col items-center"
             >
               <motion.img
                 src={product.imageSrc}
@@ -58,30 +62,21 @@ export default function FeaturedProducts() {
                 whileHover={{ opacity: 0.9 }}
                 transition={{ duration: 0.3 }}
               />
-              <h3 className="text-xl font-normal text-gray-700 mb-2">
+              <h3 className="text-3xl font-normal text-gray-700 mb-2">
                 {product.title}
               </h3>
-              <p className="text-sm text-gray-600 mb-4">
+              <p className="text-base text-gray-600 mb-4">
                 {product.description}
               </p>
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
-                className="mt-auto bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+                className="mt-auto text-gray-800 px-4 py-2 rounded  transition"
               >
-                Order Now
+                Discover More
               </motion.button>
             </motion.div>
           ))}
-        </div>
-        <div className="mt-12">
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
-            className="bg-green-600 text-white px-6 py-3 rounded-lg font-normal hover:bg-green-700 transition"
-          >
-            Explore All Obesity Products
-          </motion.button>
         </div>
       </div>
     </section>
