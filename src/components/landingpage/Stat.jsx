@@ -1,6 +1,5 @@
 import { motion, AnimatePresence  } from "framer-motion";
 import { ChevronRight } from "lucide-react";
-import { Link } from "react-router-dom";
 import heroBackground from "../../assets/images/hero..jpeg";
 import { useState, useEffect } from "react";
 
@@ -120,25 +119,44 @@ export default function HeroSection() {
       </div>
       </div>
       <div>
-       <div className=" grid grid-cols-2 md:grid-cols-4 gap-6 my-6 text-gray-950 p-6">
+
+      <div className="relative overflow-hidden border-y border-gray-200 bg-[#fff5bf] py-5">
+        <motion.div
+          animate={{ x: ["0%", "-50%"] }}
+          transition={{
+            duration: 15,
+            repeat: Infinity,
+            ease: "linear",
+          }}
+          className="flex whitespace-nowrap"
+        >
           {[
-            { label: "Biomedical Research Products", to: "/biomedical-research-products" },
-            { label: "CRO & CDMO Services", to: "/cro-cdmo-services" },
-            { label: "CGMP Manufacturing & API Products", to: "/cgmp-manufacturing-api-products" },
-            { label: "Forensic & Toxicology Reference Standards", to: "/forensic-toxicology-reference-standards" },
-          ].map((item, idx) => (
-            <Link
+            "Quercetin",
+            "Vitamin C",
+            "Glucose",
+            "Caffeine",
+            "Chlorogenic Acid",
+            "Gallic Acid",
+            "Lycopene",
+            "Piperine",
+            "Catechin",
+            "Amino Acids",
+            "Flavonoids",
+            "Sugars",
+            "HPLC Method Development",
+            "Food Chemistry",
+            "Phytochemical Analysis",
+          ].map((label, idx) => (
+            <span
               key={idx}
-              to={item.to}
-              className="bg-[#fff5bf] text-3xl border border-[#BF5495] shadow-sm p-6 text-gray-900 hover:shadow-md transition flex items-center justify-between gap-4"
+              className="mx-10 text-base md:text-lg font-medium tracking-wide text-gray-900 shrink-0"
             >
-              <span>{item.label}</span>
-              <ChevronRight
-                className="w-8 h-8 transition-transform text-[#BF5495]"
-              />
-            </Link>
+              {label}
+            </span>
           ))}
-        </div>
+        </motion.div>
+      </div>
+
      </div>
     </section>
   );
