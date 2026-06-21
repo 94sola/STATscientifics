@@ -120,7 +120,7 @@ export default function HeroSection() {
       </div>
       </div>
       <div>
-       <div className=" grid grid-cols-2 md:grid-cols-4 gap-6 my-6 text-[#008cbb]">
+       <div className=" grid grid-cols-2 md:grid-cols-4 gap-6 my-6 text-gray-950 p-6">
           {[
             { label: "Biomedical Research Products", to: "/biomedical-research-products" },
             { label: "CRO & CDMO Services", to: "/cro-cdmo-services" },
@@ -130,7 +130,7 @@ export default function HeroSection() {
             <Link
               key={idx}
               to={item.to}
-              className="bg-white text-3xl border border-[#BF5495] shadow-sm p-6 text-gray-900 hover:shadow-md transition flex items-center justify-between gap-4"
+              className="bg-[#f0f0f0] text-3xl border border-[#BF5495] shadow-sm p-6 text-gray-900 hover:shadow-md transition flex items-center justify-between gap-4"
             >
               <span>{item.label}</span>
               <ChevronRight

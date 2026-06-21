@@ -1,11 +1,8 @@
-
 import { motion } from "framer-motion";
-
-// Import images directly
-import Img1 from "../../assets/images/data.jpg";
-import Img2 from "../../assets/images/gc-ms.jpg";
-import Img3 from "../../assets/images/gc.jpg";
-import Img4 from "../../assets/images/gc.jpg";
+import Img1 from "../../assets/images/fatty acids.jpg";
+import Img2 from "../../assets/images/Proten.jpg";
+import Img3 from "../../assets/images/vitamins.jpg";
+import Img4 from "../../assets/images/Phenolics.jpg";
 
 const products = [
   {
@@ -58,7 +55,7 @@ export default function FeaturedProducts() {
               <motion.img
                 src={product.imageSrc}
                 alt={product.imageAlt}
-                className="w-full h-40 object-contain mb-4"
+                className="w-full h-44 object-contain mb-4"
                 whileHover={{ opacity: 0.9 }}
                 transition={{ duration: 0.3 }}
               />
