@@ -130,7 +130,7 @@ export default function HeroSection() {
             <Link
               key={idx}
               to={item.to}
-              className="bg-[#f0f0f0] text-3xl border border-[#BF5495] shadow-sm p-6 text-gray-900 hover:shadow-md transition flex items-center justify-between gap-4"
+              className="bg-[#fff5bf] text-3xl border border-[#BF5495] shadow-sm p-6 text-gray-900 hover:shadow-md transition flex items-center justify-between gap-4"
             >
               <span>{item.label}</span>
               <ChevronRight

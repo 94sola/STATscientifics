@@ -6,15 +6,14 @@ import { FiPhone } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-[#f0f0f0] text-gray-950 pt-20 pb-10 font-manrope">
+    <footer className="w-full bg-[#fff5bf] text-gray-950 pt-20 pb-10 font-manrope">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
         {/* GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14">
 
-          {/* LEFT: Logo + Newsletter */}
           <div>
-            <img src={logo} alt="STAT Scientific" className="h-32 mb-6" />
+            <img src={logo} alt="STAT Scientific" className="h-24" />
             <h4 className="text-xl font-semibold text-neutral-950 mb-4">
               Stay Connected & Informed
             </h4>
@@ -25,7 +24,7 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Email Address"
-                className="flex-1 px-4 py-2 rounded-md bg-neutral-300 text-gray-900 focus:outline-none"
+                className="flex-1 px-4 py-2 rounded-md border border-[#BF5495]  bg-yellow-100 text-gray-900 focus:outline-none"
               />
               <button
                 type="submit"
@@ -76,19 +75,19 @@ const Footer = () => {
             {/* Social Icons */}
             <div className="flex gap-4">
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
-                className="bg-neutral-300 hover:bg-neutral-600 p-3 rounded-full transition">
+                className="bg-yellow-100 hover:bg-yellow-200 p-3 rounded-full transition">
                 <FaInstagram />
               </a>
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
-                className="bg-neutral-300 hover:bg-neutral-600 p-3 rounded-full transition">
+                className="bg-yellow-100 hover:bg-yellow-200 p-3 rounded-full transition">
                 <FaFacebookF />
               </a>
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
-                className="bg-neutral-300 hover:bg-neutral-600 p-3 rounded-full transition">
+                className="bg-yellow-100 hover:bg-yellow-200 p-3 rounded-full transition">
                 <FaTwitter />
               </a>
               <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer"
-                className="bg-neutral-300 hover:bg-neutral-600 p-3 rounded-full transition">
+                className="bg-yellow-100 hover:bg-yellow-200 p-3 rounded-full transition">
                 <FaWhatsapp />
               </a>
             </div>
