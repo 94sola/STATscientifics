@@ -50,22 +50,6 @@ export const menuData = {
     },
   ],
 
-  APPLICATIONS: [
-    {
-      category: "Industries",
-      children: [
-        {
-          name: "Pharmaceutical",
-          links: ["QC Testing", "Manufacturing"],
-        },
-        {
-          name: "Food & Beverage",
-          links: ["Safety Testing", "Contaminants"],
-        },
-      ],
-    },
-  ],
-
   SERVICES: [
     {
       category: "Laboratory Services",
