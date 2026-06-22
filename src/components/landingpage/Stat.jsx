@@ -48,9 +48,7 @@ export default function HeroSection() {
         alt="Hero Background"
         className="absolute inset-0 w-full h-full object-cover"
       />
-
-      {/* Main Content */}
-      <div className="relative z-10 flex">
+      <div className="relative mb-8 z-10 flex">
         <div
           className="
             absolute
@@ -120,7 +118,7 @@ export default function HeroSection() {
       </div>
       <div>
 
-      <div className="relative overflow-hidden border-y border-gray-200 bg-[#fff5bf] py-5">
+      <div className="relative overflow-hidden border-y border-gray-200 bg-[#fff5bf] py-1.5">
         <motion.div
           animate={{ x: ["0%", "-50%"] }}
           transition={{
