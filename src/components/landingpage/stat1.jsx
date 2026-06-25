@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+
 import Img1 from "../../assets/images/fatty acids.jpg";
 import Img2 from "../../assets/images/Proten.jpg";
 import Img3 from "../../assets/images/vitamins.jpg";
@@ -10,24 +12,28 @@ const products = [
     description:
       "Comprehensive characterization of fatty acids in various foods or oils.",
     imageSrc: Img1,
+    Link: "/fattyacid",
   },
   {
     title: "Amino Acid Profiling",
     description:
       "Detect and quantify amino acids in food products.",
     imageSrc: Img2,
+    Link: "/aminoacid",
   },
   {
     title: "Vitamins Analysis",
     description:
       "Full quantification of fat and water soluble vitamins in foods.",
     imageSrc: Img3,
+    Link: "/vitamins",
   },
    {
     title: "Quantitative Phenolics & Flavonoids Analysis",
     description:
       "Identify, quantify and profile phenolics, flavonoids and secondary metabolites.",
     imageSrc: Img4,
+    Link: "/phenolics",
   },
 ];
 
@@ -65,13 +71,9 @@ export default function FeaturedProducts() {
               <p className="text-base text-gray-600 mb-4">
                 {product.description}
               </p>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.3 }}
-                className="mt-auto text-gray-800 px-4 py-2 rounded  transition"
-              >
+              <Link to={product.Link} className="mt-auto text-gray-800 px-4 py-2 rounded  transition">
                 Discover More
-              </motion.button>
+              </Link>
             </motion.div>
           ))}
         </div>

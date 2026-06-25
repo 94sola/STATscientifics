@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import Hero from "./components/landingpage/home";
+import Fatty from "./components/section/fattyacid";
 
 import "./index.css";
 
@@ -16,7 +17,8 @@ function App() {
         <Navbar />
 
         <Routes>
-          <Route path="/" element={<Hero />} /> 
+          <Route path="/" element={<Hero />} />
+          <Route path="/fattyacid" element={<Fatty />} /> 
         </Routes>
 
         <Footer />
