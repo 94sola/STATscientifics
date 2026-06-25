@@ -65,7 +65,7 @@ export default function ProductPage() {
               Related Services
             </h2>
 
-            <ul className="space-y-2 text-base text-[#BF5495]">
+            <ul className="space-y-2 text-base text-gray-500">
               <li>Omega-3 Analysis</li>
               <li>Omega-6 Analysis</li>
               <li>EPA & DHA Quantification</li>
@@ -113,7 +113,7 @@ export default function ProductPage() {
               Sample Submission Guide
             </button>
 
-            <button className="px-5 py-2 border border-[#BF5495] text-[#BF5495] rounded-full hover:bg-[#BF5495] hover:text-white transition">
+            <button className="px-5 py-2 border border-[#fff5bf] text-gray-700 rounded-full hover:bg-[#fff5bf] hover:text-gray-800 transition">
               Request A Quote
             </button>
           </div>
@@ -233,7 +233,7 @@ export default function ProductPage() {
             <li>Natural Products</li>
           </ul>
 
-          <button className="mt-6 w-full px-4 py-3 bg-[#BF5495] text-white rounded hover:bg-[#c94c97] hover:text-white transition">
+          <button className="mt-6 w-full px-4 py-3 bg-[#fff5bf] text-gray-700 rounded hover:bg-[#fff5bf] hover:text-black transition">
             Request Analysis
           </button>
 

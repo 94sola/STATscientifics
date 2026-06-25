@@ -41,8 +41,8 @@ export default function FeaturedProducts() {
   return (
     <section className=" py-12 text-xl font-sans max-w-460 mx-auto">
       <div className=" px-6 text-center">
-        <h2 className="text-5xl font-medium text-gray-800 mb-8">
-          Featured Services
+        <h2 className="text-4xl font-medium text-gray-800 mb-8">
+          Services
         </h2>
         <div className="grid gap-8 md:grid-cols-4">
           {products.map((product, idx) => (
@@ -65,7 +65,7 @@ export default function FeaturedProducts() {
                 whileHover={{ opacity: 0.9 }}
                 transition={{ duration: 0.3 }}
               />
-              <h3 className="text-3xl font-normal text-gray-700 mb-2">
+              <h3 className="text-2xl font-normal text-gray-700 mb-2">
                 {product.title}
               </h3>
               <p className="text-base text-gray-600 mb-4">

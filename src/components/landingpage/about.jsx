@@ -11,7 +11,7 @@ const About = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium text-gray-900 mb-4 sm:mb-6 lg:mb-8 leading-tight sm:leading-snug">
+          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium text-gray-900 mb-4 sm:mb-6 lg:mb-8 leading-tight sm:leading-snug">
             Welcome to STAT Scientific
           </h1>
           <p className="max-w-2xl text-base sm:text-lg md:text-xl lg:text-lg text-gray-700 leading-6 sm:leading-7 md:leading-8">
@@ -30,7 +30,7 @@ const About = () => {
           transition={{ duration: 0.6, delay: 0 }}
           viewport={{ once: true }}
         >
-          <span className="mt-0.5 sm:mt-1 h-3 w-3 sm:h-4 sm:w-4 rounded-full bg-orange-400 flex-shrink-0"></span>
+          <span className="mt-0.5 sm:mt-1 h-3 w-3 sm:h-4 sm:w-4 rounded-full bg-orange-400 shrink-0"></span>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-neutral-800 leading-snug">Food Chemistry</p>
         </motion.div>
         <motion.div 
@@ -40,7 +40,7 @@ const About = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
           viewport={{ once: true }}
         >
-          <span className="mt-0.5 sm:mt-1 h-3 w-3 sm:h-4 sm:w-4 rounded-full bg-gray-500 flex-shrink-0"></span>
+          <span className="mt-0.5 sm:mt-1 h-3 w-3 sm:h-4 sm:w-4 rounded-full bg-gray-500 shrink-0"></span>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-neutral-800 leading-snug">Natural Products Research</p>
         </motion.div>
         <motion.div 
@@ -50,7 +50,7 @@ const About = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <span className="mt-0.5 sm:mt-1 h-3 w-3 sm:h-4 sm:w-4 rounded-full bg-[#fff5bf] flex-shrink-0"></span>
+          <span className="mt-0.5 sm:mt-1 h-3 w-3 sm:h-4 sm:w-4 rounded-full bg-[#fff5bf] shrink-0"></span>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-neutral-800 leading-snug">HPLC Method Development</p>
         </motion.div>
         <motion.div 
@@ -60,7 +60,7 @@ const About = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           viewport={{ once: true }}
         >
-          <span className="mt-0.5 sm:mt-1 h-3 w-3 sm:h-4 sm:w-4 rounded-full bg-[#BF5495] flex-shrink-0"></span>
+          <span className="mt-0.5 sm:mt-1 h-3 w-3 sm:h-4 sm:w-4 rounded-full bg-[#BF5495] shrink-0"></span>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-neutral-800 leading-snug">Quality Assurance</p>
         </motion.div>
       </div>
