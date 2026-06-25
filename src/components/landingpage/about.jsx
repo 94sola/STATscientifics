@@ -11,10 +11,10 @@ const About = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium text-gray-900 mb-4 sm:mb-6 lg:mb-8 leading-tight sm:leading-snug">
+          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium text-gray-900 mb-4 sm:mb-6 lg:mb-8 leading-tight sm:leading-snug">
             Welcome to STAT Scientific
           </h1>
-          <p className="max-w-2xl text-base sm:text-lg md:text-xl lg:text-lg text-gray-700 leading-6 sm:leading-7 md:leading-8">
+          <p className="max-w-2xl text-sm sm:text-base md:text-base lg:text-lg text-gray-700 leading-6 sm:leading-7 md:leading-8">
             STAT Scientific is an independent analytical laboratory
             dedicated to advancing food science, natural products
             research, and quality assurance through high-performance
