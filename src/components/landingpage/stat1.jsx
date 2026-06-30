@@ -19,7 +19,7 @@ const products = [
     description:
       "Detect and quantify amino acids in food products.",
     imageSrc: Img2,
-    Link: "/aminoacid",
+    Link: "/amino",
   },
   {
     title: "Vitamins Analysis",

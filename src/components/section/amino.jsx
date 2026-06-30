@@ -8,7 +8,7 @@ export default function ProductPage() {
         <aside className="lg:col-span-3 bg-white border border-gray-300 p-4">
           <div className="mb-6 border border-gray-300 p-4">
             <h2 className="text-xl italic font-medium border-b border-gray-300 pb-2 text-gray-600">
-              Fatty Acid Profiling
+             Amino Acid Profiling
             </h2>
           </div>
 
@@ -18,9 +18,9 @@ export default function ProductPage() {
             </h2>
 
             <p className="text-base text-gray-700 leading-6">
-              Expert analytical support for fatty acid characterization,
-              lipid composition studies, nutritional analysis, and quality
-              assurance applications.
+            Expert analytical support for amino acid characterization,
+            protein composition studies, nutritional analysis,
+            food quality assessment, and research applications..
             </p>
 
             <div className="mt-4 space-y-2 text-base text-gray-700">
@@ -48,15 +48,15 @@ export default function ProductPage() {
 
           <div className="mb-6 border border-gray-300 p-4">
             <h2 className="text-lg font-semibold mb-3">
-              Lipid Resource Center
+              Amino Acid Resource Center
             </h2>
 
             <ul className="text-base space-y-2 text-gray-700">
-              <li>Fatty acid analysis fundamentals</li>
-              <li>Omega-3 and Omega-6 characterization</li>
-              <li>Lipid composition studies</li>
-              <li>Nutritional quality assessment</li>
-              <li>Food and oil testing resources</li>
+              <li>Amino acid analysis fundamentals</li>
+              <li>Essential amino acid quantification</li>
+              <li>Protein composition studies</li>
+              <li>Food and feed quality assessment</li>
+              <li>Nutritional analysis resources</li>
             </ul>
           </div>
 
@@ -66,13 +66,13 @@ export default function ProductPage() {
             </h2>
 
             <ul className="space-y-2 text-base text-gray-500">
-              <li>Omega-3 Analysis</li>
-              <li>Omega-6 Analysis</li>
-              <li>EPA & DHA Quantification</li>
-              <li>Lipid Composition Analysis</li>
+              <li>Essential Amino Acid Analysis</li>
+              <li>Non-Essential Amino Acid Analysis</li>
+              <li>Protein Composition Analysis</li>
+              <li>Hydrolyzed Amino Acid Profiling</li>
               <li>Nutritional Label Verification</li>
-              <li>Fish Oil Testing</li>
-              <li>Edible Oil Characterization</li>
+              <li>Feed Analysis</li>
+              <li>Research Sample Analysis</li>
               <li>Food Composition Analysis</li>
             </ul>
           </div>
@@ -83,12 +83,12 @@ export default function ProductPage() {
           {/* Header */}
           <div className="text-center border-b border-gray-200 pb-6 mb-6">
             <h1 className="text-4xl md:text-5xl font-light text-gray-800">
-              Fatty Acid Profiling
+              Amino Acid Profiling
             </h1>
 
             <p className="text-lg text-gray-500 mt-3">
-              Comprehensive Characterization of Fatty Acids in Foods,
-              Oils, Nutraceuticals, and Natural Products
+            Comprehensive Characterization of Amino Acids in Foods,
+            Feeds, Biological Samples, Nutraceuticals, and Natural Products
             </p>
           </div>
 
@@ -97,7 +97,7 @@ export default function ProductPage() {
             <div className="w-full max-w-xl h-56 bg-gray-100 border border-gray-300 flex items-center justify-center text-gray-500">
               <img
                 src={image}
-                alt="Fatty Acid Profiling"
+                alt="Amino Acid Profiling"
                 className="w-full h-full object-cover"
               /> 
             </div>
@@ -126,31 +126,36 @@ export default function ProductPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-8 text-base text-gray-900">
               <div className="font-semibold">Service</div>
-              <div>Fatty Acid Profiling</div>
+              <div>Amino Acid Profiling</div>
 
               <div className="font-semibold">Purpose</div>
               <div>
-                Comprehensive characterization and quantification of
-                fatty acids in complex matrices.
+              Comprehensive identification and quantification of
+              amino acids in complex biological and food matrices.
               </div>
 
               <div className="font-semibold">Sample Types</div>
               <div>
-                Vegetable oils, fish oils, edible fats, dairy products,
-                nutritional supplements, food ingredients, and natural
-                products.
+                Foods, feeds, biological tissues,
+                protein isolates, nutritional supplements,
+                pharmaceutical samples,
+                agricultural products,
+                and natural products.
               </div>
 
               <div className="font-semibold">Analysis Type</div>
               <div>
-                Qualitative and quantitative fatty acid composition
+                Qualitative and quantitative amino acid composition
                 analysis.
               </div>
 
               <div className="font-semibold">Target Compounds</div>
               <div>
-                Saturated, monounsaturated, polyunsaturated, Omega-3,
-                Omega-6, EPA, DHA, and related fatty acids.
+                Essential amino acids,
+                non-essential amino acids,
+                branched-chain amino acids (BCAA),
+                aromatic amino acids,
+                and sulfur-containing amino acids.
               </div>
 
               <div className="font-semibold">Analytical Platform</div>
@@ -160,13 +165,16 @@ export default function ProductPage() {
 
               <div className="font-semibold">Applications</div>
               <div>
-                Quality control, product development, nutritional
-                labeling, research, and regulatory compliance.
+                Quality control,
+                protein characterization,
+                nutritional labeling,
+                research,
+                and regulatory compliance..
               </div>
 
               <div className="font-semibold">Deliverables</div>
               <div>
-                Comprehensive analytical reports detailing fatty acid
+                Comprehensive analytical reports detailing amino acid
                 composition and concentration data.
               </div>
             </div>
@@ -179,40 +187,34 @@ export default function ProductPage() {
             </h2>
 
             <p className="text-gray-700 leading-8">
-              Fatty Acid Profiling is a specialized analytical service
-              designed to identify and quantify fatty acids present in
-              foods, oils, dietary supplements, and natural product
-              formulations. Accurate fatty acid characterization is
-              essential for evaluating nutritional quality, verifying
-              product specifications, supporting product development,
-              and ensuring compliance with industry requirements.
+            Amino Acid Profiling is a specialized analytical service designed
+            to identify and quantify amino acids present in food products,
+            nutritional supplements, biological samples, feeds,
+            pharmaceutical formulations, and natural products.
+            Accurate amino acid characterization is essential for evaluating
+            protein quality, nutritional value, ingredient authenticity,
+            product development, and regulatory compliance.
             </p>
 
             <p className="text-gray-700 leading-8 mt-4">
-              Using advanced chromatographic methodologies, individual
-              fatty acids are separated, identified, and quantified to
-              generate a complete fatty acid profile. Analysis can
-              include saturated fatty acids (SFA), monounsaturated
-              fatty acids (MUFA), polyunsaturated fatty acids (PUFA),
-              Omega-3 fatty acids, Omega-6 fatty acids, EPA, DHA, and
-              other nutritionally important lipid components.
+            Using advanced chromatographic methodologies, individual amino acids are separated,
+            identified, and quantified to generate a complete amino acid profile.
+            Analysis includes essential amino acids,
+            non-essential amino acids, branched-chain amino acids (BCAA),
+            aromatic amino acids, and other nutritionally important compounds.
             </p>
 
             <p className="text-gray-700 leading-8 mt-4">
-              Fatty acid profiling plays a critical role in food
-              science, nutraceutical development, edible oil testing,
-              nutritional labeling, authenticity verification, and
-              academic research. The resulting data provides valuable
-              insight into product composition, consistency, stability,
-              and nutritional value.
+            Amino acid profiling plays an important role in food science,
+            nutrition, pharmaceutical research, animal feed evaluation, clinical research, quality assurance, and academic studies.
+            The analytical results provide valuable insight into protein composition,
+            sample quality, consistency, and nutritional performance.
             </p>
 
             <p className="text-gray-700 leading-8 mt-4">
-              Detailed analytical reports allow manufacturers,
-              researchers, and quality assurance teams to make informed
-              decisions regarding formulation optimization, ingredient
-              verification, quality monitoring, and regulatory
-              submissions.
+            Detailed analytical reports enable manufacturers, researchers, quality assurance laboratories,
+            and regulatory agencies to make informed decisions regarding product formulation,
+            ingredient verification, quality monitoring, and scientific research.
             </p>
           </div>
         </main>
@@ -224,12 +226,12 @@ export default function ProductPage() {
           </h2>
 
           <ul className="space-y-3 text-base text-gray-900">
-            <li>Vegetable Oils</li>
-            <li>Fish Oils</li>
-            <li>Edible Fats</li>
-            <li>Dairy Products</li>
+            <li>Foods</li>
+            <li>Feeds</li>
+            <li>Protein Isolates</li>
+            <li>Biological Samples</li>
             <li>Nutritional Supplements</li>
-            <li>Food Ingredients</li>
+            <li>Agricultural Products</li>
             <li>Natural Products</li>
           </ul>
 
@@ -247,25 +249,35 @@ export default function ProductPage() {
               <li>Nutritional Label Development</li>
               <li>Ingredient Verification</li>
               <li>Research & Development</li>
-              <li>Product Authentication</li>
-              <li>Regulatory Support</li>
+              <li>Protein Characterization</li>
+              <li>Clinical Research</li>
               <li>Method Validation Studies</li>
             </ul>
           </div>
 
           <div className="mt-8 border-t border-gray-200 pt-6">
             <h2 className="text-lg font-semibold mb-3">
-              Key Fatty Acids
+              Key Amino Acids
             </h2>
 
             <ul className="text-base space-y-2 text-gray-900">
-              <li>Alpha-Linolenic Acid (ALA)</li>
-              <li>Eicosapentaenoic Acid (EPA)</li>
-              <li>Docosahexaenoic Acid (DHA)</li>
-              <li>Linoleic Acid (LA)</li>
-              <li>Oleic Acid</li>
-              <li>Palmitic Acid</li>
-              <li>Stearic Acid</li>
+              <li>Leucine (ALA)</li>
+              <li>Isoleucine (ILE)</li>
+              <li>Valine (VAL)</li>
+              <li>Lysine (LYS)</li>
+              <li>Methionine (MET)</li>
+              <li>Threonine (THR)</li>
+              <li>Phenylalanine (PHE)</li>
+              <li>Tryptophan (TRP)</li>
+              <li>Histidine (HIS)</li>
+              <li>Arginine (ARG)</li>
+              <li>Glutamine Acid (GLN)</li>
+              <li>Asparagine (ASN)</li>
+              <li>Serine (SER)</li>
+              <li>Glycine (GLY)</li>
+              <li>Proline (PRO)</li>
+              <li>Tyrosine (TYR)</li>
+              <li>Aspartic Acid</li>
             </ul>
           </div>
         </aside>
