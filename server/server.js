@@ -1,3 +1,4 @@
+
 import express from "express";
 import cors from "cors";
 import nodemailer from "nodemailer";
@@ -6,6 +7,8 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const app = express();
+
+
 
 const allowedOrigins = [
   "http://localhost:5173",
@@ -21,16 +24,26 @@ if (process.env.CLIENT_URL) {
 app.use(
   cors({
     origin: (origin, callback) => {
-      if (!origin || allowedOrigins.includes(origin)) {
+      // Allow requests with no origin
+      if (!origin) {
         return callback(null, true);
       }
-      return callback(null, true);
+
+      // Allow configured frontend origins
+      if (allowedOrigins.includes(origin)) {
+        return callback(null, true);
+      }
+
+      return callback(new Error("Not allowed by CORS"));
     },
+
     credentials: true,
   })
 );
 
+
 app.use(express.json());
+
 
 function escapeHtml(value) {
   return String(value || "")
@@ -40,6 +53,8 @@ function escapeHtml(value) {
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#039;");
 }
+
+
 
 app.post("/api/contact", async (req, res) => {
   try {
@@ -52,6 +67,8 @@ app.post("/api/contact", async (req, res) => {
       message,
     } = req.body;
 
+
+
     if (!name || !email || !message) {
       return res.status(400).json({
         success: false,
@@ -59,15 +76,18 @@ app.post("/api/contact", async (req, res) => {
       });
     }
 
+
     const isSmtpConfigured =
       Boolean(process.env.SMTP_HOST) &&
       Boolean(process.env.SMTP_USER) &&
       Boolean(process.env.SMTP_PASSWORD);
 
+
     if (!isSmtpConfigured) {
       console.warn(
         "⚠️ [CONTACT FORM] SMTP credentials are not configured in environment variables."
       );
+
       console.log("📥 [CONTACT ENQUIRY RECEIVED]:", {
         name,
         email,
@@ -78,7 +98,6 @@ app.post("/api/contact", async (req, res) => {
         receivedAt: new Date().toISOString(),
       });
 
-      // In local development / testing without SMTP configured:
       if (process.env.NODE_ENV !== "production") {
         return res.status(200).json({
           success: true,
@@ -87,6 +106,7 @@ app.post("/api/contact", async (req, res) => {
         });
       }
 
+      // Production without SMTP
       return res.status(500).json({
         success: false,
         message:
@@ -94,10 +114,17 @@ app.post("/api/contact", async (req, res) => {
       });
     }
 
+  
+
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
-      port: Number(process.env.SMTP_PORT || 587),
-      secure: process.env.SMTP_SECURE === "true",
+
+      port: Number(
+        process.env.SMTP_PORT || 587
+      ),
+
+      secure:
+        process.env.SMTP_SECURE === "true",
 
       auth: {
         user: process.env.SMTP_USER,
@@ -105,9 +132,14 @@ app.post("/api/contact", async (req, res) => {
       },
     });
 
+
     await transporter.sendMail({
       from: `"STAT Scientific Website" <${process.env.SMTP_USER}>`,
-      to: process.env.RECEIVER_EMAIL || process.env.SMTP_USER,
+
+      to:
+        process.env.RECEIVER_EMAIL ||
+        process.env.SMTP_USER,
+
       replyTo: email,
 
       subject: `New Website Enquiry - ${
@@ -117,10 +149,12 @@ app.post("/api/contact", async (req, res) => {
       html: `
         <!DOCTYPE html>
         <html>
+
         <head>
           <meta charset="UTF-8" />
           <title>STAT Scientific Enquiry</title>
         </head>
+
         <body style="
           margin:0;
           padding:40px 20px;
@@ -128,18 +162,22 @@ app.post("/api/contact", async (req, res) => {
           font-family:Arial, Helvetica, sans-serif;
           color:#171717;
         ">
+
           <div style="
             max-width:700px;
             margin:0 auto;
             background:#ffffff;
             border:1px solid #e5e5e5;
           ">
+
             <!-- Header -->
+
             <div style="
               background:#661c48;
               padding:30px;
               color:#ffffff;
             ">
+
               <p style="
                 margin:0 0 8px;
                 font-size:12px;
@@ -149,6 +187,7 @@ app.post("/api/contact", async (req, res) => {
               ">
                 STAT Scientific
               </p>
+
               <h1 style="
                 margin:0;
                 font-size:25px;
@@ -156,10 +195,13 @@ app.post("/api/contact", async (req, res) => {
               ">
                 New Website Enquiry
               </h1>
+
             </div>
 
             <!-- Content -->
+
             <div style="padding:35px;">
+
               <h2 style="
                 margin:0 0 25px;
                 font-size:18px;
@@ -173,7 +215,9 @@ app.post("/api/contact", async (req, res) => {
                 cellspacing="0"
                 style="border-collapse:collapse;"
               >
+
                 <tr>
+
                   <td style="
                     padding:12px 0;
                     border-bottom:1px solid #eeeeee;
@@ -182,6 +226,7 @@ app.post("/api/contact", async (req, res) => {
                   ">
                     Full Name
                   </td>
+
                   <td style="
                     padding:12px 0;
                     border-bottom:1px solid #eeeeee;
@@ -189,8 +234,11 @@ app.post("/api/contact", async (req, res) => {
                   ">
                     ${escapeHtml(name)}
                   </td>
+
                 </tr>
+
                 <tr>
+
                   <td style="
                     padding:12px 0;
                     border-bottom:1px solid #eeeeee;
@@ -198,14 +246,18 @@ app.post("/api/contact", async (req, res) => {
                   ">
                     Email
                   </td>
+
                   <td style="
                     padding:12px 0;
                     border-bottom:1px solid #eeeeee;
                   ">
                     ${escapeHtml(email)}
                   </td>
+
                 </tr>
+
                 <tr>
+
                   <td style="
                     padding:12px 0;
                     border-bottom:1px solid #eeeeee;
@@ -213,14 +265,20 @@ app.post("/api/contact", async (req, res) => {
                   ">
                     Organization
                   </td>
+
                   <td style="
                     padding:12px 0;
                     border-bottom:1px solid #eeeeee;
                   ">
-                    ${escapeHtml(organization || "Not provided")}
+                    ${escapeHtml(
+                      organization || "Not provided"
+                    )}
                   </td>
+
                 </tr>
+
                 <tr>
+
                   <td style="
                     padding:12px 0;
                     border-bottom:1px solid #eeeeee;
@@ -228,14 +286,20 @@ app.post("/api/contact", async (req, res) => {
                   ">
                     Phone
                   </td>
+
                   <td style="
                     padding:12px 0;
                     border-bottom:1px solid #eeeeee;
                   ">
-                    ${escapeHtml(phone || "Not provided")}
+                    ${escapeHtml(
+                      phone || "Not provided"
+                    )}
                   </td>
+
                 </tr>
+
                 <tr>
+
                   <td style="
                     padding:12px 0;
                     border-bottom:1px solid #eeeeee;
@@ -243,13 +307,18 @@ app.post("/api/contact", async (req, res) => {
                   ">
                     Area of Interest
                   </td>
+
                   <td style="
                     padding:12px 0;
                     border-bottom:1px solid #eeeeee;
                   ">
-                    ${escapeHtml(service || "Not specified")}
+                    ${escapeHtml(
+                      service || "Not specified"
+                    )}
                   </td>
+
                 </tr>
+
               </table>
 
               <h2 style="
@@ -276,33 +345,50 @@ app.post("/api/contact", async (req, res) => {
                 font-size:12px;
                 color:#737373;
               ">
-                This enquiry was submitted through the STAT Scientific website contact form.
+                This enquiry was submitted through the
+                STAT Scientific website contact form.
               </p>
+
             </div>
+
           </div>
+
         </body>
         </html>
       `,
     });
 
+
     return res.status(200).json({
       success: true,
-      message: "Your enquiry has been sent successfully.",
+      message:
+        "Your enquiry has been sent successfully.",
     });
+
   } catch (error) {
-    console.error("CONTACT FORM ERROR:", error);
+
+    console.error(
+      "CONTACT FORM ERROR:",
+      error
+    );
 
     return res.status(500).json({
       success: false,
-      message: error.message || "Unable to send your enquiry.",
+      message:
+        error.message ||
+        "Unable to send your enquiry.",
     });
   }
 });
 
+
 app.get("/", (req, res) => {
-  res.json({
-    message: "STAT Scientific contact server is running.",
+  res.status(200).json({
+    message:
+      "STAT Scientific contact server is running.",
   });
 });
 
-export default app;
+
+
+export default app;

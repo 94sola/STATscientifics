@@ -34,9 +34,18 @@ export default function ContactSection() {
       message: formData.get("message"),
     };
 
-    const apiUrl =
-      import.meta.env.VITE_API_URL ||
-      "http://localhost:5000/api/contact";
+    const apiUrl = import.meta.env.VITE_API_URL;
+
+    if (!apiUrl) {
+      console.error("VITE_API_URL is not configured.");
+
+      setError(
+        "The contact service is currently unavailable. Please try again later or contact us directly."
+      );
+
+      setLoading(false);
+      return;
+    }
 
     try {
       const response = await fetch(apiUrl, {
@@ -60,7 +69,6 @@ export default function ContactSection() {
       );
 
       form.reset();
-
     } catch (err) {
       console.error("Submission error:", err);
 
@@ -68,12 +76,11 @@ export default function ContactSection() {
         err.message ||
           "We could not send your enquiry. Please try again or contact us directly."
       );
-
     } finally {
       setLoading(false);
     }
   };
-
+  
   return (
     <section
       id="contact"
@@ -81,7 +88,6 @@ export default function ContactSection() {
     >
       <div className="mx-auto max-w-440 px-5 sm:px-8 lg:px-12">
 
-        {/* Heading */}
 
         <div className="mb-14 max-w-4xl sm:mb-16 lg:mb-20">
 
@@ -108,11 +114,8 @@ export default function ContactSection() {
 
         </div>
 
-        {/* Main Content */}
-
         <div className="grid gap-8 lg:grid-cols-[0.75fr_1.25fr] lg:gap-12">
 
-          {/* Contact Details */}
 
           <div className="bg-[#661c48] p-8 text-white sm:p-10 lg:p-12">
 
@@ -132,15 +135,16 @@ export default function ContactSection() {
 
             <div className="space-y-8">
 
-              {/* Email */}
 
               <div className="flex gap-4">
 
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center border border-white/20">
+
                   <Mail
                     className="h-5 w-5 text-white"
                     strokeWidth={1.5}
                   />
+
                 </div>
 
                 <div>
@@ -157,15 +161,15 @@ export default function ContactSection() {
 
               </div>
 
-              {/* Phone */}
-
               <div className="flex gap-4">
 
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center border border-white/20">
+
                   <Phone
                     className="h-5 w-5 text-white"
                     strokeWidth={1.5}
                   />
+
                 </div>
 
                 <div>
@@ -182,15 +186,15 @@ export default function ContactSection() {
 
               </div>
 
-              {/* Location */}
-
               <div className="flex gap-4">
 
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center border border-white/20">
+
                   <MapPin
                     className="h-5 w-5 text-white"
                     strokeWidth={1.5}
                   />
+
                 </div>
 
                 <div>
@@ -207,15 +211,15 @@ export default function ContactSection() {
 
               </div>
 
-              {/* Hours */}
-
               <div className="flex gap-4">
 
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center border border-white/20">
+
                   <Clock3
                     className="h-5 w-5 text-white"
                     strokeWidth={1.5}
                   />
+
                 </div>
 
                 <div>
@@ -238,7 +242,6 @@ export default function ContactSection() {
 
             </div>
 
-            {/* Bottom Statement */}
 
             <div className="mt-12 border-t border-white/15 pt-7">
 
@@ -272,7 +275,6 @@ export default function ContactSection() {
               className="space-y-6"
             >
 
-              {/* Name + Email */}
 
               <div className="grid gap-6 sm:grid-cols-2">
 
@@ -317,8 +319,6 @@ export default function ContactSection() {
                 </div>
 
               </div>
-
-              {/* Organization + Phone */}
 
               <div className="grid gap-6 sm:grid-cols-2">
 
@@ -425,7 +425,6 @@ export default function ContactSection() {
 
               </div>
 
-              {/* Message */}
 
               <div>
 
@@ -447,7 +446,6 @@ export default function ContactSection() {
 
               </div>
 
-              {/* Success Message */}
 
               {success && (
                 <div className="flex gap-3 border border-green-200 bg-green-50 p-4 text-sm text-green-800">
@@ -461,7 +459,6 @@ export default function ContactSection() {
                 </div>
               )}
 
-              {/* Error Message */}
 
               {error && (
                 <div className="flex gap-3 border border-red-200 bg-red-50 p-4 text-sm text-red-800">
@@ -475,7 +472,6 @@ export default function ContactSection() {
                 </div>
               )}
 
-              {/* Submit */}
 
               <button
                 type="submit"
