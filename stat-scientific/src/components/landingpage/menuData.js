@@ -1,85 +1,58 @@
 export const menuData = {
+
+
   PRODUCTS: [
     {
-      category: "Analytical Chemistry",
+      category: "Reference Standards",
       children: [
-        {
-          name: "Analytical Sample Preparation",
-          links: [
-            "Air Monitoring Devices & Tubes",
-            "Laboratory Filter Holders",
-            "Millipore Lab Filter Membranes",
-            "Millex Syringe Filters",
-            "Purge Traps",
-            "Solid Phase Extraction (SPE) & QuEChERS",
-          ],
-        },
-        {
-          name: "Analytical Chromatography",
-          links: [
-            "HPLC",
-            "GC",
-            "Columns",
-          ],
-        },
-        {
-          name: "Analytical Reagents",
-          links: [
-            "Buffers",
-            "Solvents",
-            "Standards",
-          ],
-        },
+        "Certified Reference Materials",
+        "Pesticide Standards",
+        "Pharmaceutical Standards",
+        "FAME Standards",
+        "ICP Multi-element Standards",
       ],
     },
 
     {
-      category: "Cell Culture & Analysis",
+      category: "Chromatography Consumables",
       children: [
-        {
-          name: "Media",
-          children: [
-            {
-              name: "Basal Media",
-              links: ["Basal Media"],
-            },
-            {
-              name: "Specialty Media",
-              links: ["Specialty Media"],
-            },
-          ],
-        },
-        {
-          name: "Supplements",
-          children: [
-            {
-              name: "Growth Factors",
-              links: ["Growth Factors"],
-            },
-            {
-              name: "Serums",
-              links: ["Serums"],
-            },
-          ],
-        },
+        "GC Columns",
+        "HPLC Columns",
+        "Guard Columns",
+        "Syringe Filters",
       ],
     },
 
     {
-      category: "Chemistry & Biochemicals",
+      category: "Instrument Parts",
       children: [
-        {
-          name: "Organic Chemicals",
-          links: [
-            "Acids",
-            "Bases",
-            "Solvents",
-          ],
-        },
+        "Detector Parts",
+        "Lamps",
+        "Swagelok Components",
+        "Regulators",
+      ],
+    },
+
+    {
+      category: "Chemicals & Solvents",
+      children: [
+        "HPLC Solvents",
+        "LC-MS Solvents",
+        "Derivatization Reagents",
+        "Buffers",
+      ],
+    },
+
+    {
+      category: "General Laboratory Supplies",
+      children: [
+        "Pipettes",
+        "Centrifuge Tubes",
+        "Filtration Products",
+        "Glassware",
       ],
     },
   ],
-
 
   APPLICATIONS: [
     {
@@ -87,9 +60,7 @@ export const menuData = {
       children: [
         {
           name: "Amino Acid Analysis",
-          links: [
-            "amino",
-          ],
+          links: ["amino"],
         },
       ],
     },
@@ -99,9 +70,7 @@ export const menuData = {
       children: [
         {
           name: "Vitamin Analysis",
-          links: [
-            "vitamin",
-          ],
+          links: ["vitamin"],
         },
       ],
     },
@@ -111,9 +80,7 @@ export const menuData = {
       children: [
         {
           name: "Fatty Acid Analysis",
-          links: [
-            "fattyacid",
-          ],
+          links: ["fattyacid"],
         },
       ],
     },
@@ -123,14 +90,11 @@ export const menuData = {
       children: [
         {
           name: "Phenolic Analysis",
-          links: [
-            "phenolic",
-          ],
+          links: ["phenolic"],
         },
       ],
     },
   ],
-
 
   ABOUT: [
     {
@@ -138,29 +102,24 @@ export const menuData = {
       children: [
         {
           name: "About STAT Scientific",
-          links: [
-            "About Us",
-          ],
+          links: ["About Us"],
         },
       ],
     },
   ],
 
-
+ 
   CONTACT: [
     {
       category: "Contact Us",
       children: [
         {
           name: "Get in Touch",
-          links: [
-            "Contact",
-          ],
+          links: ["Contact"],
         },
       ],
     },
   ],
-
 
   FAQ: [
     {
@@ -168,9 +127,7 @@ export const menuData = {
       children: [
         {
           name: "FAQ",
-          links: [
-            "FAQ",
-          ],
+          links: ["FAQ"],
         },
       ],
     },
