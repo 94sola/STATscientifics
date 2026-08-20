@@ -40,6 +40,40 @@ export default async function handler(req, res) {
       });
     }
 
+    const isSmtpConfigured =
+      Boolean(env.SMTP_HOST) &&
+      Boolean(env.SMTP_USER) &&
+      Boolean(env.SMTP_PASSWORD);
+
+    if (!isSmtpConfigured) {
+      console.warn(
+        "⚠️ [CONTACT API] SMTP credentials are not configured in environment variables."
+      );
+      console.log("📥 [CONTACT ENQUIRY RECEIVED]:", {
+        name,
+        email,
+        organization: organization || "Not provided",
+        phone: phone || "Not provided",
+        service: service || "General Enquiry",
+        message,
+        receivedAt: new Date().toISOString(),
+      });
+
+      if (env.NODE_ENV !== "production") {
+        return res.status(200).json({
+          success: true,
+          message:
+            "Your enquiry has been received successfully (Dev Mode: SMTP not configured).",
+        });
+      }
+
+      return res.status(500).json({
+        success: false,
+        message:
+          "Email service is not configured. Please contact support.",
+      });
+    }
+
     // Create SMTP transporter
     const transporter = nodemailer.createTransport({
       host: env.SMTP_HOST,
@@ -56,7 +90,7 @@ export default async function handler(req, res) {
     await transporter.sendMail({
       from: `"STAT Scientific Website" <${env.SMTP_USER}>`,
 
-      to: env.RECEIVER_EMAIL,
+      to: env.RECEIVER_EMAIL || env.SMTP_USER,
 
       // When STAT Scientific clicks Reply,
       // the reply goes directly to the client.
