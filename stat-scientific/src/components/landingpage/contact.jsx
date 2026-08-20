@@ -80,7 +80,7 @@ export default function ContactSection() {
       setLoading(false);
     }
   };
-  
+
   return (
     <section
       id="contact"
@@ -179,7 +179,7 @@ export default function ContactSection() {
                   </p>
 
                   <p className="mt-1 text-sm font-medium">
-                    +234 XXX XXX XXXX
+                    +234 9034956049 / 080 90870364
                   </p>
 
                 </div>
@@ -204,7 +204,7 @@ export default function ContactSection() {
                   </p>
 
                   <p className="mt-1 text-sm font-medium leading-6">
-                    Lagos, Nigeria
+                   43 Sijuwola Street Ago-palace way Okota Lagos, Nigeria
                   </p>
 
                 </div>
